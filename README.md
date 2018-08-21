@@ -42,7 +42,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 
-### Šifrování
+### 4 kroky k zašifrování písmene
 1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
 2. Řádek s nezašifrovaným písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
