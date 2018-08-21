@@ -36,7 +36,7 @@ Kostičky při přiblížení vypadají takto, je na nich napsaná poloha tzv. o
 
 K ručnímu šifrování je zapotřebý ještě takzvaný "Marker" značka, může to být libovolný předmět, kamínek či kroužek. 
 
-## Jak na to
+### Jak na to
 
 Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Tudíš je můžete libovolně zamíchat, ale rozložení kostiček k dešifrování zprávy je zcela klíčové.  Můžete využít expanzní klíč - algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček. O tom si povíme až na konci.  
 
@@ -48,7 +48,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
 
-## Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
+# Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
 Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
 
