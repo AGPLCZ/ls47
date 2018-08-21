@@ -116,15 +116,12 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
    Zašifrované písmeno je 'w'     (='y' pohyb (5 v pravo, 0 dolů)       Vyšlo 'w'!  
 ```       
 
-
-2. Řádek se vztupním písmenem rotujeme o 1 doprava
-3. Sloupec se šifrovaným písmenem o 1 dolů
-
-   
+### Rotace
+2.Řádek se vztupním písmenem rotujeme o 1 doprava
+3.Sloupec se šifrovaným písmenem o 1 dolů
 
 ```
 2,3. Rotujte o jednu pozici celý řádek a sloupec
-   
 
 e]f _ a b c d        [e]f _ a b c d
 l m g h i j k         l m g h i j k
