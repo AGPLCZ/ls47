@@ -50,13 +50,15 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
 
 #### Příklad šifrování za pomocí obrázků:
+
 Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. 
 
+Chceme zašifrovat písmeno: Y - (nešifrovaná kostička)
+1. Najdeme vstupní písmeno Y: to je pozice vztupního písmene
+
+  Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
+
 ```
-
-  Chceme zašifrovat písmeno: Y (nešifrovaná kostička)                                                 
-  Značku Marker [] položíme doleva nahoru.
-
   [e]f _ a b c d                                             
    l m g h i j k                                           
    ( ) / : ? ! '                                            
@@ -66,24 +68,34 @@ Takto vypadá náš tajný klíč, který musíme znát i k dešifrování.
    + * 7 8 9 , -
 ```        
         
-Podívejte se na kostičku kde je značka :  [] 
+#### Značka (Marker)  []
+Podívejte se na kostičku kde je značka (Marker) []
+Kostička s písmenem E má na sobě (offset) (původní polohu před zašifrováním) 
+
         
 ```
-                                           /-----\
-                                           |     |
-                                           | e  5|
-                                           |   0 |
-                                           \-----/
+                                           /---------\
+                                           |         |
+                                           |    e  5 |
+                                           |         |
+                                           |    0    |
+                                           \--------/
 ```
 
-   
+#### Vstupní písmeno
+Najděte vstupní písmeno Y
+Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované písmeno:
+- Poloha kostičky neboli offset určuje na jaké pozici je zašifrované písmeno.   
+- poloha číslo 5 určuje o kolik kartiček se máme pohnout v pravo
+- poloha čísla 0 určuje o kolis kartiček se máme pohnout dolů
+- Náš pohyb byl pouze v pravo, zašifrované písmeno je 'w' 
    
 
 5. Zašifrované písmeno je 'w'            6. Rotate the plaintext 1 position
-   (='y' moved by (5,0))           right, keep marker coordinates.
+   (='y' pohyb (5 v pravo, 0 dolů)       right, keep marker coordinates.
 
                                [e]f _ a b c d        [e]f _ a b c d
-   Output 'w'!                  l m g h i j k         l m g h i j k
+   Vyšlo 'w'!                  l m g h i j k         l m g h i j k
                                 ( ) / : ? ! '         ( ) / : ? ! '
                                 s t n o p q r         s t n o p q r
                                   z . u v w x y  >>   y z . u v w x
