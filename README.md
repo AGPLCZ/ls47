@@ -101,8 +101,6 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
 - Náš pohyb byl pouze v pravo, zašifrované písmeno je 'w' 
 
 1. Najděte pozici vztupního písmene Y plus offset na pozici markeru = pozice zašifrovaného písmena
-2. 
-
 
 
 ```
