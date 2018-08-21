@@ -48,7 +48,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
 
-#### Příklad šifrování za pomocí obrázků:
+## Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
 Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
 
