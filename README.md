@@ -55,22 +55,26 @@ Takto vypadá náš tajný klíč, který musíme znát i k dešifrování.
 ```
 
   Chceme zašifrovat písmeno: Y (nešifrovaná kostička)                                                 
-  Značku Marker [] položíme doleva nahoru.   Podívám se na kostičku kde je značka:
+  Značku Marker [] položíme doleva nahoru.
 
-  [e]f _ a b c d                                             /-----\
-   l m g h i j k                                             |     |
-   ( ) / : ? ! '                                             | e  5|
-   s t n o p q r                                             |   0 |
-   z . u v w x y                                             \-----/
+  [e]f _ a b c d                                             
+   l m g h i j k                                           
+   ( ) / : ? ! '                                            
+   s t n o p q r                                            
+   z . u v w x y                                            
    5 6 0 1 2 3 4
    + * 7 8 9 , -
-   
+```        
+        
+Podívejte se na kostičku kde je značka :  [] 
+        
+```
                                            /-----\
                                            |     |
                                            | e  5|
                                            |   0 |
                                            \-----/
-
+```
 
    
    
