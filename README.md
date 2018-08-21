@@ -42,7 +42,6 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 
-
 ### Šifrování
 1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
 2. Řádek s nezašifrovaným písmenem rotujeme o 1 doprava
@@ -57,7 +56,7 @@ Chceme zašifrovat písmeno: Y - (nešifrovaná kostička)
 1. Najdeme vstupní písmeno Y: to je pozice vztupního písmene
 
   Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
-
+  
 ```
   [e]f _ a b c d                                             
    l m g h i j k                                           
