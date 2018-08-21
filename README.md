@@ -1,7 +1,5 @@
 # Simetrická šifra LS47
-LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole velké 7x7, aby bylo možné šifrovat některé strukturované informace. Rovněž popisuje jednoduchý
-expanzní klíč - algoritmus, který funguje na bázi hesla.
-
+LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole velké 7x7, aby bylo možné šifrovat některé strukturované informace. 
 ![Tiles printed out](tiles.jpg)
 
 ### Znaková tabulka
@@ -17,7 +15,7 @@ u v w x y z .
 / : ? ! ' ( )
 ```
 
-Destičky při přiblížení vypadají takto, je na nich i poloha, která se bude využívat k šifrování a dešifrování.
+Kostičky při přiblížení vypadají takto, je na nich napsaná i poloha, která se bude využívat k šifrování a dešifrování.
 
 ```
 /-----\  /-----\  /-----\  /-----\  /-----\
@@ -40,8 +38,10 @@ K ručnímu šifrování je zapotřebý ještě takzvaný "Marker"značka, můž
 
 ## Jak na to
 
-Kostičky si rozložíme před sebe do čtverce, jejich permutace je
-tajný klíč. Značku (Marker) [M] položíme doleva nahoru.
+Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Tudíš je můžete libovolně zamíchat, ale rozložení kostiček k dešifrování zprávy je zcela klíčové.  Můžete využít expanzní klíč - algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček. O tom si povíme až na konci.  
+
+
+
 
 ### Šifrování
 1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
@@ -49,21 +49,33 @@ tajný klíč. Značku (Marker) [M] položíme doleva nahoru.
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
 
-#### Encryption example with ascii images!
+#### Příklad šifrování za pomocí obrázků:
+Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. 
 
 ```
-1,2. Symmetric key with         3,4. We want to encrypt 'y'.
-     marker put on 'e'               Look at the marked tile:
 
-  [e]f _ a b c d                     /-----\
-   l m g h i j k                     |     |
-   ( ) / : ? ! '                     | e  5|
-   s t n o p q r                     |   0 |
-   z . u v w x y                     \-----/
+  Chceme zašifrovat písmeno: Y (nešifrovaná kostička)                                                 
+  Značku Marker [] položíme doleva nahoru.   Podívám se na kostičku kde je značka:
+
+  [e]f _ a b c d                                             /-----\
+   l m g h i j k                                             |     |
+   ( ) / : ? ! '                                             | e  5|
+   s t n o p q r                                             |   0 |
+   z . u v w x y                                             \-----/
    5 6 0 1 2 3 4
    + * 7 8 9 , -
+   
+                                           /-----\
+                                           |     |
+                                           | e  5|
+                                           |   0 |
+                                           \-----/
 
-5. Ciphertext is 'w'            6. Rotate the plaintext 1 position
+
+   
+   
+
+5. Zašifrované písmeno je 'w'            6. Rotate the plaintext 1 position
    (='y' moved by (5,0))           right, keep marker coordinates.
 
                                [e]f _ a b c d        [e]f _ a b c d
