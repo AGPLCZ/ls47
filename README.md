@@ -58,6 +58,7 @@ Chceme zašifrovat písmeno: Y - (nešifrovaná kostička)
   Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
   
 ```
+
   [e]f _ a b c d                                             
    l m g h i j k                                           
    ( ) / : ? ! '                                            
@@ -65,6 +66,7 @@ Chceme zašifrovat písmeno: Y - (nešifrovaná kostička)
    z . u v w x y                                            
    5 6 0 1 2 3 4
    + * 7 8 9 , -
+   
 ```        
         
 #### Značka (Marker)  []
@@ -93,6 +95,8 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
 5. Zašifrované písmeno je 'w'            6. Rotate the plaintext 1 position
    (='y' pohyb (5 v pravo, 0 dolů)       right, keep marker coordinates.
 
+
+```
                                [e]f _ a b c d        [e]f _ a b c d
    Vyšlo 'w'!                  l m g h i j k         l m g h i j k
                                 ( ) / : ? ! '         ( ) / : ? ! '
@@ -100,8 +104,9 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
                                   z . u v w x y  >>   y z . u v w x
                                 5 6 0 1 2 3 4         5 6 0 1 2 3 4
                                 + * 7 8 9 , -         + * 7 8 9 , -
+```
 
-
+```
 7. Rotate the ciphertext 1         Now look at the ciphertext tile:
    position down.
 
@@ -112,7 +117,10 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
     y z . u v q x                       \-----/
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
+```
 
+
+```
 8. Update the marker position         9. GOTO 3.
    by ciphertext offset (2,3).
 
@@ -124,8 +132,6 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
     y z . u v q x
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
-
-
 ```
 
 ### Dešifrování
