@@ -52,6 +52,16 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
 
+```
+  [e]f _ a b c d                                             
+   l m g h i j k                                           
+   ( ) / : ? ! '                                            
+   s t n o p q r                                            
+   z . u v w x y                                            
+   5 6 0 1 2 3 4
+   + * 7 8 9 , -
+``` 
+
 
 #### Najděte pozici vztupního písmena
 Chcemeli zašifrovat písmeno: Y, najděte takzvané vstupní písmeno či vztupní pozici - (nešifrovaná kostička) = písmeno Y
@@ -63,7 +73,7 @@ Chcemeli zašifrovat písmeno: Y, najděte takzvané vstupní písmeno či vztup
    l m g h i j k                                           
    ( ) / : ? ! '                                            
    s t n o p q r                                            
-   z . u v w x y                                            
+   z . u v w x (y)                                            
    5 6 0 1 2 3 4
    + * 7 8 9 , -
    
@@ -79,7 +89,7 @@ Kostička označená značkou Marker s písmenem E má na sobě "offset" to je p
                                            |    e  5 |
                                            |         |
                                            |    0    |
-                                           \--------/
+                                           \---------/
 ```
 
 #### Vstupní písmeno
