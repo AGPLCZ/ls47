@@ -2,6 +2,9 @@
 
 
 # LS47 hand-computable cipher
+Je to mírně 
+Jedná se o mírné zlepšení šifry ElsieFour popsané Alanem
+Kaminsky
 
 This is a slight improvement of the ElsieFour cipher as described by Alan
 Kaminsky [1]. We use 7x7 characters instead of original (barely fitting) 6x6,
@@ -65,17 +68,11 @@ trash).
 
 You may as well see the paper [1], there are also pictures. This is somewhat more concentrated:
 
-### Encryption
-
-1. The symmetric key is the initial state of the board. Arrange your tiles to 7x7 square according to the key.
-2. Put the marker on (0,0).
-3. Find the next letter you want to encrypt on the board, its position is `P`.
-4. Look at the marker; numbers written on the marked tile are coordinates `M`.
-5. Compute position of the ciphertext as `C := P + M mod (7,7)`. Output the letter found on position `C` as ciphertext.
-6. Rotate the row that contains the plaintext letter one position to the right, but do not carry the marker if present (it should stay on the same coordinates).
-7. Rotate the column that now (after the first rotation) contains the ciphertext letter one position down, also not carrying the marker.
-8. Update the position of the marker: `M := M + C' mod (7,7)` where `C'` are the numbers written on the ciphertext tile.
-9. Repeat from 3 as many times as needed to encrypt the whole plaintext.
+### Šifrování
+1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
+2. Řádek s nezašifrovaným písmenem rotujeme o 1 doprava
+3. Sloupec se zašifrovaným písmenem o 1 dolů
+4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
 
 #### Encryption example with ascii images!
 
@@ -129,17 +126,13 @@ You may as well see the paper [1], there are also pictures. This is somewhat mor
 
 ```
 
-### Decryption
-
+### Dešifrování
+Proces dešifrování je podobný:
 1. Najdeme zašifrované vstupní písmeno: pozice kostičky (mínus) – offset na pozici markeru = pozice dešifrovaného písmena
 2. Řádek s rozluštěným písmenem rotujeme o 1 doprava
 3. Sloupec s nerozluštěným písmenem o 1 dolů
 4. Značku (Marker) posuneme o offset na kostičce se nerozluštěným písmenem
 
-Decryption procedure is basically the same, except that in step 5 you know `C`
-and `M`, and need to produce `P` by subtraction: `P := C - M mod (7,7)`.
-Otherwise (except that you input ciphertext and output plaintext) everything
-stays the same.
 
 ### Key generation
 
