@@ -1,35 +1,12 @@
-# ls47
-
-
-# LS47 hand-computable cipher
-Je to mírně 
-Jedná se o mírné zlepšení šifry ElsieFour popsané Alanem
-Kaminsky
-
-This is a slight improvement of the ElsieFour cipher as described by Alan
-Kaminsky [1]. We use 7x7 characters instead of original (barely fitting) 6x6,
-to be able to encrypt some structured information. We also describe a simple
-key-expansion algorithm, because remembering passwords is popular. Similar
-security considerations as with ElsieFour hold.
-
-There's also a 3D-printable SCAD model of the whole thing. Yay!
+# Simetrická šifra LS47
+LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole velké 7x7, aby bylo možné šifrovat některé strukturované informace. Rovněž popisuje jednoduchý
+expanzní klíč - algoritmus, který funguje na bázi hesla.
 
 ![Tiles printed out](tiles.jpg)
 
-We suggest printing the model using more than one filament color to make the
-letters easily recognizable. Thanks go to Martin Ptasek for providing the
-picture.
+### Znaková tabulka
 
-If you trust your computer, there is now a very simple python implementation in
-`ls47.py`. A much better version usuable as an actual binary (also supporting
-several versions of padding and the original ElsieFour cipher) was supplied by
-Bernhard Esslinger from the CrypTool project, available in `lc4.py`.
-
-### Character board
-
-We have added some real punctuation, basic stuff for writing expressions,
-punctuation and quotes. The letters of the board now look like this:
-
+LS47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace.
 ```
 _ a b c d e f
 g h i j k l m
@@ -40,8 +17,7 @@ u v w x y z .
 / : ? ! ' ( )
 ```
 
-Zoomed in, it's very practical to have extra position information written on
-the tiles:
+Destičky při přiblížení vypadají takto, je na nich i poloha, která se bude využívat k šifrování a dešifrování.
 
 ```
 /-----\  /-----\  /-----\  /-----\  /-----\
@@ -60,13 +36,12 @@ the tiles:
    .        .
 ```
 
-To run (hand-run) the encryption/decryption, you will also need some kind of a
-marker (e.g. a small shiny stone, bolt nut or similar kind of well-shaped
-trash).
+K ručnímu šifrování je zapotřebý ještě takzvaný "Marker"značka, může to být libovolný předmět, kamínek, kroužek. 
 
-## How-To
+## Jak na to
 
-You may as well see the paper [1], there are also pictures. This is somewhat more concentrated:
+Kostičky si rozložíme před sebe do čtverce, jejich permutace je
+tajný klíč. Značku (Marker) [M] položíme doleva nahoru.
 
 ### Šifrování
 1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
