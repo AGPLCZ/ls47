@@ -50,7 +50,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 # Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
-Takto vypadá náš tajný klíč, který musíme znát i k dešifrování. Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
+Takto vypadá náš tajný klíč, podle kterého zašifrujeme a dešifrujeme zprávu. Ten si poznačte. Značku Marker [] položíme při začátku šifrování či dešifrování doleva nahoru.
 
 ```
   [e]f _ a b c d                                             
