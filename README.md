@@ -1,5 +1,5 @@
 # Simetrická šifra LS47
-LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole velké 7x7, aby bylo možné šifrovat některé strukturované informace. 
+LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. 
 ![Tiles printed out](tiles.jpg)
 
 ### Znaková tabulka
@@ -15,7 +15,7 @@ u v w x y z .
 / : ? ! ' ( )
 ```
 
-Kostičky při přiblížení vypadají takto, je na nich napsaná i poloha, která se bude využívat k šifrování a dešifrování.
+Kostičky při přiblížení vypadají takto, je na nich napsaná poloha tzv. offset, která se bude využívat k šifrování a dešifrování.
 
 ```
 /-----\  /-----\  /-----\  /-----\  /-----\
