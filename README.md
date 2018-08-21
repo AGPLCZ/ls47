@@ -34,7 +34,7 @@ Kostičky při přiblížení vypadají takto, je na nich napsaná poloha tzv. o
    .        .
 ```
 
-K ručnímu šifrování je zapotřebý ještě takzvaný "Marker"značka, může to být libovolný předmět, kamínek, kroužek. 
+K ručnímu šifrování je zapotřebý ještě takzvaný "Marker" značka, může to být libovolný předmět, kamínek či kroužek. 
 
 ## Jak na to
 
