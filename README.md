@@ -84,12 +84,12 @@ Podívejte nyní na kostičku se značkou (Marker) []
 Kostička označená značkou Marker s písmenem E má na sobě "offset" to je původní poloha kostičky 
 
 ```
-                                           /---------\
-                                           |         |
-                                           |    e  5 |
-                                           |         |
-                                           |    0    |
-                                           \---------/
+ /---------\
+ |         |
+ |    e  5 |
+ |         |
+ |    0    |
+ \---------/
 ```
 
 #### Vstupní písmeno
