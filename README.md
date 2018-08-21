@@ -101,21 +101,40 @@ Nyní zašifrujeme písmeno Y tak, že od jeho polohy nalezneme zašifrované p�
 - Náš pohyb byl pouze v pravo, zašifrované písmeno je 'w' 
 
 1. Najděte pozici vztupního písmene Y plus offset na pozici markeru = pozice zašifrovaného písmena
+2. 
+
+
+
+```
+
+  [e]f _ a b c d                                             
+   l m g h i j k                                           
+   ( ) / : ? ! '                                            
+   s t n o p q r                                            
+   z . u v (w) x (y)    Y 1. 2. 3. 4. 5. -> W                                     
+   5 6 0 1 2 3 4
+   + * 7 8 9 , -
+   
+   Zašifrované písmeno je 'w'     (='y' pohyb (5 v pravo, 0 dolů)       Vyšlo 'w'!  
+```       
+
+
 2. Řádek se vztupním písmenem rotujeme o 1 doprava
 3. Sloupec se šifrovaným písmenem o 1 dolů
+
    
 
 ```
-    Zašifrované písmeno je 'w'            2,3. Rotujte o jednu pozici celý řádek a sloupec
-   (='y' pohyb (5 v pravo, 0 dolů)       
+2,3. Rotujte o jednu pozici celý řádek a sloupec
+   
 
-                                            [e]f _ a b c d        [e]f _ a b c d
-   Vyšlo 'w'!                               l m g h i j k         l m g h i j k
-                                            ( ) / : ? ! '         ( ) / : ? ! '
-                                            s t n o p q r         s t n o p q r
-                                            z . u v w x y  >>   y z . u v w x
-                                            5 6 0 1 2 3 4         5 6 0 1 2 3 4
-                                            + * 7 8 9 , -         + * 7 8 9 , -
+e]f _ a b c d        [e]f _ a b c d
+l m g h i j k         l m g h i j k
+( ) / : ? ! '         ( ) / : ? ! '
+s t n o p q r         s t n o p q r
+z . u v w x y  >>   y z . u v w x
+5 6 0 1 2 3 4         5 6 0 1 2 3 4
++ * 7 8 9 , -         + * 7 8 9 , -
 ```
 
 ```
