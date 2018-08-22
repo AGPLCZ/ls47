@@ -10,7 +10,7 @@ import random
 
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
-padding_size = 0
+padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
 
 def check_key(key):
@@ -154,9 +154,9 @@ if __name__ == '__main__':
     print('-------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-    key = derive_key('heslo')
+    key = derive_key('heslo') #ZADEJ HESLO - to ovlivní rozležení tabulky
     print('Klíč šifry:           ' + key)
-    enc = encrypt_pad(key, 'vlozeny_text')
+    enc = encrypt_pad(key, 'vlozeny_text') #ZADEJ TEXT
     print('-------------------------------------------------------------')
    # print('-------------------------------------------------------------')
    # print('Tabulka písmen v této implementaci:')
