@@ -136,15 +136,24 @@ z . u v w x y  >>   y z . u v w x              Y se orotovalo do prava o jednu p
 ```
 Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrované písmeno.
 
-   [e]f _ a b , d                       /-----\
-    l m g h i c k                       |     |          Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
-    ( ) / : ? j '                       | w  2|          Nyní se podívejte na zašifrovanou kostičku - W a značku posnuňte o offset (2,3)
-    s t n o p ! r                       |   3 |          Značku posouváte od značky. Ke značce připočítejte offset zašifrovaného písmene.
-    y z . u v q x                       \-----/
+   [e]f _ a b , d                      
+    l m g h i c k                   
+    ( ) / : ? j '           
+    s t n o p ! r                         
+    y z . u v q x                     
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
 ```
+### 4. Značka
+```
 
+ /-----\
+ |     |          Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
+ | w  2|          Nyní se podívejte na zašifrovanou kostičku - W a značku posnuňte o offset (2,3)
+ |   3 |          Značku posouváte od značky. Ke značce připočítejte offset zašifrovaného písmene.
+ \-----/
+
+```
 
 ```
     Aktualizujte polohu značky (makeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní W = (2,3).
