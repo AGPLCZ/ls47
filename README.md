@@ -168,7 +168,7 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
 
 
 ### Dešifrování
-Proces dešifrování je podobný, především offset se odečítá. 
+Proces dešifrování je podobný, především offset se `odečítá`. 
 1. Najdeme zašifrované vstupní písmeno: pozice kostičky – offset na pozici markeru = pozice dešifrovaného písmena
 2. Řádek s rozluštěným písmenem rotujeme o 1 doprava
 3. Sloupec s nerozluštěným písmenem o 1 dolů
@@ -178,7 +178,7 @@ Proces dešifrování je podobný, především offset se odečítá.
 ### Expanzní klíč - heslo
 Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Můžete využít algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček.  
 
-Heslo: ahoj
+Heslo: `ahoj`
 - Podivám se na první písmeno A a zjistím z něj offset 
 - Posunu první řádek a sloupec o offset na písmeni A (do prava a pak dolů)
 - Podivám se na druhé písmeno H a zjistím z něj offset 
@@ -187,7 +187,7 @@ Heslo: ahoj
 - Posunu třetí řádek a sloupec o offset na písmeni O
 Posouváte se ze šikma dolů...
 
-Heslo by mělo mít alespoň dvacet znaků abychom dosáhli dostatečné entropie.
+Heslo by mělo mít alespoň `dvacet znaků` abychom dosáhli dostatečné entropie.
 
 
 
