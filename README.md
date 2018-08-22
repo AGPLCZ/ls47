@@ -77,7 +77,9 @@ Chcemeli zašifrovat písmeno: Y, najděte takzvané vstupní písmeno či vztup
    5 6 0 1 2 3 4
    + * 7 8 9 , -
    
-```        
+```      
+
+`I := I + 1 mod 7
         
 #### Značka (Marker)  []
 Podívejte nyní na kostičku se značkou (Marker) []
