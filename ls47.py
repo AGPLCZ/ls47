@@ -149,15 +149,20 @@ def decrypt_pad(key, ciphertext):
 if __name__ == '__main__':
 
     # a bit of test!
-
-    print('letters in this implementation (line by line):')
-    print(letters)
-    #print('tiles positions: ' + str(tiles))
-
+    print('-------------------------------------------------------------')
+    print('Písmena v této implementaci:')
+    print('Originální: ' + letters)
     key = derive_key('heslo')
-    print('test key: ' + key)
-    enc = encrypt_pad(key, 'text')
+    print('Klíč šifry: ' + key)
+    enc = encrypt_pad(key, 'vlozeny_text')
+    
+   # print('-------------------------------------------------------------')
+   # print('Tabulka písmen v této implementaci:')
+   #print('tiles positions: ' + str(tiles))
+    print('-------------------------------------------------------------')
 
-    print('encrypted test: ' + enc)
+ 
+
+    print('Šifrováno: ' + enc)
     dec = decrypt_pad(key, enc)
-    print('decrypted test: ' + dec)
+    print('Vstupní text: ' + dec)
