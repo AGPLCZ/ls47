@@ -5,6 +5,7 @@
 #
 # Originally written by Mirek Kratochvil (2017)
 # Python3 port by Bernhard Esslinger (Feb 2018)
+# Překlad, vzhled by AGPL (2018)
 
 import random
 
