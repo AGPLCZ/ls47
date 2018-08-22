@@ -154,9 +154,9 @@ if __name__ == '__main__':
     print(letters)
     #print('tiles positions: ' + str(tiles))
 
-    key = derive_key('bacour')
+    key = derive_key('heslo')
     print('test key: ' + key)
-    enc = encrypt_pad(key, 'heslo')
+    enc = encrypt_pad(key, 'text')
 
     print('encrypted test: ' + enc)
     dec = decrypt_pad(key, enc)
