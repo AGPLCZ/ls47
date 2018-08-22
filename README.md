@@ -168,8 +168,8 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
 
 
 ### Dešifrování
-Proces dešifrování je podobný:
-1. Najdeme zašifrované vstupní písmeno: pozice kostičky (mínus) – offset na pozici markeru = pozice dešifrovaného písmena
+Proces dešifrování je podobný, především offset se odečítá. 
+1. Najdeme zašifrované vstupní písmeno: pozice kostičky – offset na pozici markeru = pozice dešifrovaného písmena
 2. Řádek s rozluštěným písmenem rotujeme o 1 doprava
 3. Sloupec s nerozluštěným písmenem o 1 dolů
 4. Značku (Marker) posuneme o offset na kostičce se nerozluštěným písmenem
