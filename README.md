@@ -96,11 +96,11 @@ Kostička označená značkou Marker s písmenem E má na sobě "offset" to je p
 
 #### Vstupní písmeno
 Nyní zašifrujeme písmeno Y
--> Od jeho polohy nalezneme zašifrované písmeno.
--> Od vstupního písmene počítejne cestu k zašifrovanému písmeni.
--> Offset písmene E je (5,0), to znamená že od písmene Y se posunume po kostičkách o 5 do prava.
+- Od jeho polohy nalezneme zašifrované písmeno.
+- Od vstupního písmene počítejne cestu k zašifrovanému písmeni.
+- Offset písmene E je (5,0), to znamená že od písmene Y se posunume po kostičkách o 5 do prava.
 
-1. Najděte pozici vztupního písmene Y, od toho písmene přičtěte offset na pozici markeru = pozice zašifrovaného písmena
+Definice: Najděte pozici vztupního písmene, od toho písmene přičtěte offset z pozice kde se nachází značka (marker) = pozice zašifrovaného písmena
 
 
 ```
