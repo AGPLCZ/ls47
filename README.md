@@ -62,7 +62,7 @@ Takto vypadá náš tajný klíč, podle kterého zašifrujeme a dešifrujeme zp
 ``` 
 
 
-#### Najděte pozici vztupního písmena
+#### Najděte pozici vstupního písmena
 Chcemeli zašifrovat písmeno: `Y`, najděte takzvané `vstupní písmeno` či `vstupní pozici` = písmeno Y
 
 
