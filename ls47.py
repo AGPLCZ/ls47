@@ -10,7 +10,7 @@ import random
 
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
-padding_size = 10
+padding_size = 0
 
 
 def check_key(key):
@@ -130,7 +130,7 @@ def decrypt(key, ciphertext):
     return plaintext
 
 
-def encrypt_pad(key, plaintext, signature):
+def encrypt_pad(key, plaintext):
 
     # TODO it would also be great to randomize the message length.
 
@@ -138,7 +138,7 @@ def encrypt_pad(key, plaintext, signature):
     padding = ''.join(map(lambda x: letters[random.randint(0,
                       len(letters) - 1)], range(padding_size)))
 
-    return encrypt(key, padding + plaintext + '---' + signature)
+    return encrypt(key, padding +  plaintext)
 
 
 def decrypt_pad(key, ciphertext):
@@ -152,12 +152,11 @@ if __name__ == '__main__':
 
     print('letters in this implementation (line by line):')
     print(letters)
-    # print('tiles positions: ' + str(tiles))
+    #print('tiles positions: ' + str(tiles))
 
-    key = derive_key('s3cret_p4ssw0rd/31337')
+    key = derive_key('bacour')
     print('test key: ' + key)
-    enc = encrypt_pad(key, 'conflagrate_the_rose_bush_at_six!',
-                      'peace-vector-3')
+    enc = encrypt_pad(key, 'heslo')
 
     print('encrypted test: ' + enc)
     dec = decrypt_pad(key, enc)
