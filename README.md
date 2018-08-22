@@ -43,7 +43,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 ### 4 kroky k zašifrování písmene
-1. Najdeme vstupní písmeno: pozice nešifrované kostičky + offset na pozici markeru = pozice zašifrovaného písmena
+1. Najdeme kostičku se vstupním písmenem a k pozici kostičky + offset na pozici značky [marker] = pozice zašifrovaného písmena
 2. Řádek s nezašifrovaným písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
@@ -155,10 +155,10 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
  \-----/
 
 ```
-Aktualizujte polohu značky (makeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní `W = (2,3).`
+Aktualizujte polohu značky (markeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní `W = (2,3).`
 
 ```
-     Maker je nyní na jiné pozici, a tudíš má i jiný offset.
+     Marker je nyní na jiné pozici, a tudíš má i jiný offset.
     e f _ a b , d
     l m g h i c k
     ( ) / : ? j '
