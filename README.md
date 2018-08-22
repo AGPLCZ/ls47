@@ -148,8 +148,7 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
 
 
 ```
-    Aktualizujte polohu makeru na pozici
-    podle offsetu na zašifrovaném písmeni = (2,3).
+    Aktualizujte polohu značky (makeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní W = (2,3).
 
     Maker je nyní na jiné pozici, a tudíš má i jiný offset.
     e f _ a b , d
@@ -159,7 +158,15 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
     y z . u v q x
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
+    
+    
+    HOTOVO Máte zašifrované písmeno Y  Výstup:W
+    Chcemeli zašifrovat slovo YES
+    Opakujete proces od začátku, vstupní písmeno bude E 
+
 ```
+
+
 
 ### Dešifrování
 Proces dešifrování je podobný:
@@ -169,63 +176,21 @@ Proces dešifrování je podobný:
 4. Značku (Marker) posuneme o offset na kostičce se nerozluštěným písmenem
 
 
-### Key generation
+### Expanzní klíč - heslo
+Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Můžete využít algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček.  
 
-Grab a bag full of tiles and randomly draw them one by one. Key is the 49-item permutation of them.
+Heslo: ahoj
+- Podivám se na první písmeno A a zjistím z něj offset 
+- Posunu první řádek a sloupec o offset na písmeni A (do prava a pak dolů)
+- Podivám se na druhé písmeno H a zjistím z něj offset 
+- Posunu druhý řádek a sloupec o offset na písmeni B
+- Podivám se na třetí písmeno O a zjistím z něj offset 
+- Posunu třetí řádek a sloupec o offset na písmeni O
+Posouváte se ze šikma dolů...
 
-### Key expansion from a password
+Heslo by mělo mít alespoň dvacet znaků abychom dosáhli dostatečné entropie.
 
-Remembering 49-position random permutation that includes weird characters is
-not very handy. You can instead derive the keys from an arbitrary string of
-sufficient length.
 
-"Sufficient" means "provides enough entropy". Full keys store around 208 bits
-of entropy. To reach that, your password should have:
-
-- at least around 61 decimal digits if made only from random decimal digits
-- at least around 44 letters if made only from completely random letters
-- at least around 40 alphanumeric characters if made randomly only from them
-
-To have the "standard" 128 bits of entropy, the numbers reduce to roughly 39,
-28 and 25, respectively.
-
-Note that you can save the expanded tile board for later if you don't want to
-expand the passwords before each encryption/decryption.
-
-The actual expansion can be as simple as this:
-
-1. initialize `I:=0`, put the tiles on the board sorted by their numbers (i.e. as on the picture above)
-2. Take the first letter of the password and see the numbers on its tile; mark them `Px, Py`.
-3. Rotate `I`-th row `Px` positions right
-4. Rotate `I`th column `Py` positions down
-5. `I := I + 1 mod 7`, repeat from 2 with next letter of the password.
-6. Resulting tile positions are the expanded key
-
-### Undistinguishable ciphertexts
-
-To get a different ciphertext even if the same plaintext is encrypted
-repeatedly; prepend it with a nonce. A nonce is a completely random sequence of
-letters of a pre-negotiated length (e.g. N tiles drawn randomly from a bag,
-adviseable value of N is at least 10).
-
-You may also want to add a random number of spaces to the end of the ciphertext
--- it prevents the enemy from seeing the difference between ciphertexts of 'yes
-please' and 'no', which would otherwise encrypt to gibberish that is easily
-distinguishable by length, like `qwc3w_cs'(` and `+v`.
-
-### Authenticated encryption
-
-Because ciphertext may be altered in the transfer or during the error-prone
-human processing, it is advised to append a simple "signature" to the end of
-the message; which may look as simple as `__YourHonorableNameHere`. If the
-signature doesn't match expectations (which happens with overwhelming
-probability if there was any error in the process), either try again to see if
-you didn't make a mistake, or discard the message and ask the sender to
-re-transmit.
-
-This works because the cipher output is message-dependent: Having a wrong bit
-somewhere in the middle causes avalanche effect and erases any meaning from the
-text after several characters.
 
 ## References
 
