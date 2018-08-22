@@ -151,13 +151,13 @@ if __name__ == '__main__':
     # a bit of test!
     print(' ')
     print('KONFIGURACE')
-    print('-------------------------------------------------------------')
+    print('-------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     key = derive_key('heslo') #ZADEJ HESLO - to ovlivní rozležení tabulky
     print('Klíč šifry:           ' + key)
     enc = encrypt_pad(key, 'vlozeny_text') #ZADEJ TEXT
-    print('-------------------------------------------------------------')
+    print('-------------------------------------------------------------------------')
    # print('-------------------------------------------------------------')
    # print('Tabulka písmen v této implementaci:')
    #print('tiles positions: ' + str(tiles))
@@ -165,11 +165,11 @@ if __name__ == '__main__':
     print(' ')
     print(' ')
     print('VÝSTUP')
-    print('-------------------------------------------------------------')
+    print('-------------------------------------------------------------------------')
 
  
 
     print('Šifrováný text: ' + enc)
     dec = decrypt_pad(key, enc)
     print('Vstupní text:   ' + dec)
-    print('-------------------------------------------------------------')
+    print('-------------------------------------------------------------------------')
