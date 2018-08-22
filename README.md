@@ -1,5 +1,6 @@
 # Simetrická šifra LS47
 LS47 je šifra, která obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. LS47 vychází ze šifry ElsieFour popsaná Alanem Kaminsky, LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. Ruční šifrování se může například hodit, pokud nejsme u bezpečného počítače, nebo když potřebujeme poslat na papíře bezpečnou zprávu, aniž by jsme měli přístup k počítači. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it
+
 ![Tiles printed out](tiles.jpg)
 ### Znaková tabulka
 
