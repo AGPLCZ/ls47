@@ -64,12 +64,12 @@ Takto vypadá náš tajný klíč, podle kterého zašifrujeme a dešifrujeme zp
 
 
 #### Najděte pozici vztupního písmena
-Chcemeli zašifrovat písmeno: Y, najděte takzvané vstupní písmeno či vztupní pozici - (nešifrovaná kostička) = písmeno Y
+Chcemeli zašifrovat písmeno: `Y`, najděte takzvané `vstupní písmeno` či `vstupní pozici` = písmeno Y
 
 
 ```
 
-  `[e]`f _ a b c d                                             
+   [e]f _ a b c d                                             
    l m g h i j k                                           
    ( ) / : ? ! '                                            
    s t n o p q r                                            
@@ -82,8 +82,8 @@ Chcemeli zašifrovat písmeno: Y, najděte takzvané vstupní písmeno či vztup
 
         
 #### Značka (Marker)  []
-Podívejte nyní na kostičku se značkou (Marker) []
-Kostička označená značkou Marker s písmenem E má na sobě "offset" to je původní poloha kostičky 
+Podívejte se nyní na kostičku se značkou (Marker) `[ ]`
+Kostička označená značkou Marker s písmenem `E` má na sobě `offset` to je původní poloha kostičky `(5,0)` 
 
 ```
  /---------\
@@ -100,7 +100,7 @@ Nyní zašifrujeme písmeno Y
 - Od vstupního písmene počítejne cestu k zašifrovanému písmeni.
 - Offset písmene E je (5,0), to znamená že od písmene Y se posunume po kostičkách o 5 do prava.
 
-Definice: Najděte pozici vztupního písmene, od toho písmene přičtěte offset z pozice kde se nachází značka (marker) = pozice zašifrovaného písmena
+Definice: Najděte `pozici vstupního písmene`, od toho písmene přičtěte `offset` z pozice kde se nachází značka (marker) = pozice zašifrovaného písmena
 
 
 ```
@@ -109,7 +109,7 @@ Definice: Najděte pozici vztupního písmene, od toho písmene přičtěte offs
    l m g h i j k                                           
    ( ) / : ? ! '                                            
    s t n o p q r                                            
-   z . u v (w) x (y)    Y 1. 2. 3. 4. 5. -> W                                     
+   z . u v w x y    Y 1. 2. 3. 4. 5. -> W                                     
    5 6 0 1 2 3 4
    + * 7 8 9 , -
    
@@ -117,29 +117,30 @@ Definice: Najděte pozici vztupního písmene, od toho písmene přičtěte offs
 ```       
 
 ### Rotace
-2.Řádek se vztupním písmenem rotujeme o 1 doprava
-3.Sloupec se šifrovaným písmenem o 1 dolů
+2.`Řádek` se vstupním písmenem `rotujeme o 1 doprava`
+
 
 ```
-2,3. Rotujte o jednu pozici celý řádek a sloupec
+Rotujte o jednu pozici celý řádek a sloupec
 
 e]f _ a b c d        [e]f _ a b c d
 l m g h i j k         l m g h i j k
 ( ) / : ? ! '         ( ) / : ? ! '
 s t n o p q r         s t n o p q r
-z . u v w x y  >>   y z . u v w x
+z . u v w x y  >>   y z . u v w x              Y se orotovalo do prava o jednu pozici
 5 6 0 1 2 3 4         5 6 0 1 2 3 4
 + * 7 8 9 , -         + * 7 8 9 , -
 ```
 
+3.`Sloupec` se `šifrovaným písmenem` rotuje o 1 dolů
+
 ```
-7. Rotate the ciphertext 1         Now look at the ciphertext tile:
-   position down.
+Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrované písmeno.
 
    [e]f _ a b , d                       /-----\
-    l m g h i c k                       |     |
-    ( ) / : ? j '                       | w  2|
-    s t n o p ! r                       |   3 |
+    l m g h i c k                       |     |          Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
+    ( ) / : ? j '                       | w  2|          Nyní se podívejte na zašifrovanou kostičku - W a značku posnuňte o offset (2,3)
+    s t n o p ! r                       |   3 |          Značku posouváte od značky. Ke značce připočítejte offset zašifrovaného písmene.
     y z . u v q x                       \-----/
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
@@ -147,10 +148,10 @@ z . u v w x y  >>   y z . u v w x
 
 
 ```
-8. Update the marker position         9. GOTO 3.
-   by ciphertext offset (2,3).
+    Aktualizujte polohu makeru na pozici
+    podle offsetu na zašifrovaném písmeni = (2,3).
 
-
+    Maker je nyní na jiné pozici, a tudíš má i jiný offset.
     e f _ a b , d
     l m g h i c k
     ( ) / : ? j '
