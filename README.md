@@ -37,7 +37,7 @@ K ručnímu šifrování je zapotřebý ještě takzvaný "Marker" značka, mů�
 
 ### Jak na to
 
-Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Tudíš je můžete libovolně zamíchat, ale rozložení kostiček k dešifrování zprávy je zcela klíčové.  Můžete využít expanzní klíč - algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček. O tom si povíme až na konci.  
+Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Tudíš kostičky můžete libovolně zamíchat, ale znalost rozložení kostiček je klíčové k dešifrování zprávy, proto si permutaci poznamenejte. Další možností je využít expanzní klíč, to je algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček, o tom si povíme až na konci.  
 
 
 
