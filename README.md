@@ -154,11 +154,10 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
  \-----/
 
 ```
+  Aktualizujte polohu značky (makeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní `W = (2,3).`
 
 ```
-    Aktualizujte polohu značky (makeru) na pozici podle offsetu na zašifrovaném písmeni to je nyní W = (2,3).
-
-    Maker je nyní na jiné pozici, a tudíš má i jiný offset.
+     Maker je nyní na jiné pozici, a tudíš má i jiný offset.
     e f _ a b , d
     l m g h i c k
     ( ) / : ? j '
@@ -166,14 +165,10 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
     y z . u v q x
     5 6 0 1 2 w 4
     + * 7 8 9 3 -
-    
-    
-    HOTOVO Máte zašifrované písmeno Y  Výstup:W
-    Chcemeli zašifrovat slovo YES
-    Opakujete proces od začátku, vstupní písmeno bude E 
-
 ```
-
+`HOTOVO`
+Máte zašifrované písmeno `Y`  `Výstup:W`
+Chcemeli zašifrovat slovo `YES`, opakujete proces od začátku, vstupní písmeno bude nyní `E` 
 
 
 ### Dešifrování
