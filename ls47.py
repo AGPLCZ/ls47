@@ -156,11 +156,12 @@ if __name__ == '__main__':
     print('-------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-    pasw = "tohle_je_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
+    pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
     key = derive_key ('' + pasw) 
+    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') # ruční zadání klíče
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
-    enc = encrypt_pad(key, '') #Zde zadej text k zašifrování
+    enc = encrypt_pad(key, 'ahoj') #Zde zadej text k zašifrování
     print('-------------------------------------------------------------------------')
     print(' ')
     print(' ')
