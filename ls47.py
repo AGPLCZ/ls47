@@ -84,6 +84,7 @@ def rotate_marker_down(m, col, n):
         return ((m[0] + n) % 7, m[1])
 
 
+    
 def derive_key(password):
     i = 0
     k = letters
@@ -92,7 +93,6 @@ def derive_key(password):
         k = rotate_down(rotate_right(k, i, col), i, row)
         i = (i + 1) % 7
     return k
-
 
 def encrypt(key, plaintext):
     check_key(key)
@@ -156,8 +156,10 @@ if __name__ == '__main__':
     print('-------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-    key = derive_key('rc_vd6kskjk78876543337090874875376437655665') #Zadej helo, to ovlivní rozležení tabulky
+    pasw = "tohle_je_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
+    key = derive_key ('' + pasw) 
     print('Klíč šifry:           ' + key)
+    print('Heslo šifry:          ' + pasw)
     enc = encrypt_pad(key, '') #Zde zadej text k zašifrování
     print('-------------------------------------------------------------------------')
     print(' ')
