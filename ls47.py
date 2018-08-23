@@ -8,8 +8,7 @@
 # Překlad, vzhled by AGPL (2018)
 
 import random
-
-letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!'()"
+letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
@@ -98,7 +97,9 @@ def derive_key(password):
 def encrypt(key, plaintext):
     check_key(key)
     mp = (0, 0)
-    ciphertext = '' #sem patří text k dešifrování - ZADEJ TEXT
+    #----------------------------------------------------------------------------
+    ciphertext = '' #Zde zadej text k dešifrování
+    #-----------------------------------------------------------------------------
     for p in plaintext:
         pp = find_pos(key, p)
         mix = find_ix(find_at_pos(key, mp))
@@ -155,22 +156,22 @@ if __name__ == '__main__':
     print('-------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-    key = derive_key('heslo') #ZADEJ HESLO - to ovlivní rozležení tabulky
+    key = derive_key('rc_vd6kskjk78876543337090874875376437655665') #Zadej helo, to ovlivní rozležení tabulky
     print('Klíč šifry:           ' + key)
-    enc = encrypt_pad(key, '') #text k zašifrování - ZADEJ TEXT
+    enc = encrypt_pad(key, '') #Zde zadej text k zašifrování
     print('-------------------------------------------------------------------------')
     print(' ')
     print(' ')
     print(' ')
     print('POZICE KARTIČEK  + string')
-    print('--------------------------------------------------------------------')
-    print('tiles positions: ' + str(tiles))
+    print('-------------------------------------------------------------------------')
+    print(str(tiles))
     print(' ')
     print(' ')
     print(' ')
     print('VÝSTUP')
     print('-------------------------------------------------------------------------')
-    print('Šifrováný text: ' + enc)
+    print('Šifrováný text:     ' + enc)
     dec = decrypt_pad(key, enc)
     print('Dešifrovaný text:   ' + dec)
     print('-------------------------------------------------------------------------')
