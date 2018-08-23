@@ -98,7 +98,7 @@ def derive_key(password):
 def encrypt(key, plaintext):
     check_key(key)
     mp = (0, 0)
-    ciphertext = '' #sem patří text k dešifrování 
+    ciphertext = '' #sem patří text k dešifrování - ZADEJ TEXT
     for p in plaintext:
         pp = find_pos(key, p)
         mix = find_ix(find_at_pos(key, mp))
@@ -157,19 +157,19 @@ if __name__ == '__main__':
     print('Základní rozložení:   ' + letters)
     key = derive_key('heslo') #ZADEJ HESLO - to ovlivní rozležení tabulky
     print('Klíč šifry:           ' + key)
-    enc = encrypt_pad(key, '') #ZADEJ TEXT
+    enc = encrypt_pad(key, '') #text k zašifrování - ZADEJ TEXT
     print('-------------------------------------------------------------------------')
-   # print('-------------------------------------------------------------')
-   # print('Tabulka písmen v této implementaci:')
-   #print('tiles positions: ' + str(tiles))
+    print(' ')
+    print(' ')
+    print(' ')
+    print('Pozice kartiček  + string')
+    print('--------------------------------------------------------------------')
+    print('tiles positions: ' + str(tiles))
     print(' ')
     print(' ')
     print(' ')
     print('VÝSTUP')
     print('-------------------------------------------------------------------------')
-
- 
-
     print('Šifrováný text: ' + enc)
     dec = decrypt_pad(key, enc)
     print('Dešifrovaný text:   ' + dec)
