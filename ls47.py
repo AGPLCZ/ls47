@@ -162,7 +162,7 @@ if __name__ == '__main__':
     print(' ')
     print(' ')
     print(' ')
-    print('Pozice kartiček  + string')
+    print('POZICE KARTIČEK  + string')
     print('--------------------------------------------------------------------')
     print('tiles positions: ' + str(tiles))
     print(' ')
