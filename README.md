@@ -43,10 +43,10 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 ### 4 kroky k zašifrování písmene
-1. Najdeme kostičku se vstupním písmenem a k pozici kostičky + offset na pozici značky [marker] = pozice zašifrovaného písmena
-2. Řádek s nezašifrovaným písmenem rotujeme o 1 doprava
+1. Najdeme kostičku se vstupním písmenem a k pozici kostičky přičti offset z pozice značky [ ] = pozice zašifrovaného písmena
+2. Řádek se vstupním písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
-4. Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
+4. Žnačku [ ] posuneme o offset z kostičky se zašifrovaným písmenem
 
 # Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
@@ -172,7 +172,7 @@ Aktualizujte polohu značky (markeru) na pozici podle offsetu na zašifrovaném 
 
 ### Dešifrování
 Proces dešifrování je podobný, především offset se `odečítá`. 
-1. Najdeme zašifrované vstupní písmeno: pozice kostičky – offset na pozici markeru = pozice dešifrovaného písmena
+1. Od pozice vstupního písmene odečti offset z pozice značky = pozice dešifrovaného písmena
 2. Řádek s rozluštěným písmenem rotujeme o 1 doprava
 3. Sloupec s nerozluštěným písmenem o 1 dolů
 4. Značku (Marker) posuneme o offset na kostičce se nerozluštěným písmenem
