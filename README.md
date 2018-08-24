@@ -43,7 +43,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 ### 4 kroky k zašifrování písmene
-1. Najdeme kostičku se vstupním písmenem a k pozici kostičky přičti offset z pozice značky [ ] = pozice zašifrovaného písmena
+1. K pozici vstupního písmene přičti offset z pozice značky [ ] = pozice zašifrovaného písmena
 2. Řádek se vstupním písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku [ ] posuneme o offset z kostičky se zašifrovaným písmenem
