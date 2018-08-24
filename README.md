@@ -174,7 +174,7 @@ Aktualizujte polohu značky (markeru) na pozici podle offsetu na zašifrovaném 
 Proces dešifrování je podobný, především offset se `odečítá`. 
 1. Od pozice vstupního písmene odečti offset z pozice značky = pozice dešifrovaného písmena
 2. Řádek s rozluštěným písmenem rotujeme o 1 doprava
-3. Sloupec s nerozluštěným písmenem o 1 dolů
+3. Sloupec se vstupním písmenem o 1 dolů
 4. Značku (Marker) posuneme o offset na kostičce se nerozluštěným písmenem
 
 
