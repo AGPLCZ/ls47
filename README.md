@@ -4,7 +4,7 @@ LS47 je šifra, která obstojí proti síle výkonného počítače, lze šifrov
 ![Tiles printed out](tiles.jpg)
 ### Znaková tabulka
 
-LS47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace.
+LS47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace. (Uvozovky ve scriptu ls47.py jsem nahrail @, protože script s uvozovky nefungoval.)
 ```
 _ a b c d e f
 g h i j k l m
