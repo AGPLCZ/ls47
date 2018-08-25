@@ -12,8 +12,16 @@ letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
+
+
+print('VSTUP')
+print('-------------------------------------------------------------------------')
+
 pasw = input("Zadej heslo: ") #získá od uživatele heslo a uloží jej do proměnné
-text = input("Zadejtext: ") #získá od uživatele text k šifrování a uloží jej do proměnné
+text = input("Zadejtext: ") #získá od uživatele text k šifrování a uloží jej do proměnné  
+print('-------------------------------------------------------------------------')
+print('\n \n')
+
 
 
 def check_key(key):
@@ -151,30 +159,28 @@ def decrypt_pad(key, ciphertext):
     return decrypt(key, ciphertext)[padding_size:]
 
 
+
+
 if __name__ == '__main__':
 
     # a bit of test!
-    print(' ')
     print('KONFIGURACE')
     print('-------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     #pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
-    key = derive_key ('' + pasw) 
-    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') # ruční zadání klíče
+    key = derive_key ('' + pasw)
+    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_')
+    #key = derive_key ('' + pasw)
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
     enc = encrypt_pad(key, '' + text) #Zde zadej text k zašifrování
     print('-------------------------------------------------------------------------')
-    print(' ')
-    print(' ')
-    print(' ')
+    print('\n \n ')
     print('POZICE KARTIČEK  + string')
     print('-------------------------------------------------------------------------')
     print(str(tiles))
-    print(' ')
-    print(' ')
-    print(' ')
+    print('\n \n ')
     print('VÝSTUP')
     print('-------------------------------------------------------------------------')
     print('Šifrováný text:     ' + enc)
