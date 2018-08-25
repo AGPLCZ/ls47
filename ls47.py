@@ -5,6 +5,7 @@
 #
 # Originally written by Mirek Kratochvil (2017)
 # Python3 port by Bernhard Esslinger (Feb 2018)
+# inputy, překlad, by AGPL (2018)
 
 import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
@@ -16,7 +17,7 @@ padding_size = 0 #počet přidaných znaků které se generují náhodně
 print('VSTUP')
 print('-------------------------------------------------------------------------')
 
-pasw = input("Zadej heslo který nakonfiguruje klíč šifry. \n ") #získá od uživatele heslo a uloží jej do proměnné
+pasw = input("Zadej heslo které nakonfiguruje klíč šifry. \n ") #získá od uživatele heslo a uloží jej do proměnné
 text = input("Zadejtext pro zašifrování.  \n Pokud chceš dešifrovat zprávu, nech toto pole prázdné. \n") #získá od uživatele text k šifrování a uloží jej do proměnné  
 dekodovani = input("Zadejtext pro dešifrování: \n Pokud jsi již zadal text k zašifrování, nech toto pole prázdné. \n ") #získá od uživatele text k šifrování a uloží jej do proměnné  
 print('-------------------------------------------------------------------------')
