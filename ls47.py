@@ -170,8 +170,12 @@ if __name__ == '__main__':
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     #pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
-    key = derive_key ('' + pasw)
-    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_')
+    
+    # zakomentuj key = derive_key ('' + pasw) pokud chceš aktivovat ruční zadávání abecedy
+    key = derive_key ('' + pasw) 
+    
+    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') #odkomentuj key pokud chceš ručně zadávat abecedu
+
     #key = derive_key ('' + pasw)
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
