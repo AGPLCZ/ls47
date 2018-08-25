@@ -43,7 +43,7 @@ Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klí
 
 
 ### 4 kroky k zašifrování písmene
-1. K pozici vstupního písmene přičti offset z pozice značky [ ] = pozice zašifrovaného písmena
+1. K pozici vstupního písmene přičti offset z pozice značky [ ] = pozice zašifrovaného písmene
 2. Řádek se vstupním písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. Žnačku [ ] posuneme o offset z kostičky se zašifrovaným písmenem
@@ -97,7 +97,7 @@ Kostička označená značkou Marker s písmenem `E` má na sobě `offset` to je
 #### Vstupní písmeno
 Nyní zašifrujeme písmeno Y
 - Od jeho polohy nalezneme zašifrované písmeno.
-- Od vstupního písmene počítejne cestu k zašifrovanému písmeni.
+- Od vstupního písmene počítejte cestu k zašifrovanému písmeni.
 - Offset písmene E je (5,0), to znamená že od písmene Y se posunume po kostičkách o 5 do prava.
 
 Definice: Najděte `pozici vstupního písmene`, od toho písmene přičtěte `offset` z pozice kde se nachází značka (marker) = pozice zašifrovaného písmena
