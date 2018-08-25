@@ -16,8 +16,9 @@ padding_size = 0 #počet přidaných znaků které se generují náhodně
 print('VSTUP')
 print('-------------------------------------------------------------------------')
 
-pasw = input("Zadej heslo: ") #získá od uživatele heslo a uloží jej do proměnné
-text = input("Zadejtext: ") #získá od uživatele text k šifrování a uloží jej do proměnné  
+pasw = input("Zadej heslo který nakonfiguruje klíč šifry. \n ") #získá od uživatele heslo a uloží jej do proměnné
+text = input("Zadejtext pro zašifrování.  \n Pokud chceš dešifrovat zprávu, nech toto pole prázdné. \n") #získá od uživatele text k šifrování a uloží jej do proměnné  
+dekodovani = input("Zadejtext pro dešifrování: \n Pokud jsi již zadal text k zašifrování, nech toto pole prázdné. \n ") #získá od uživatele text k šifrování a uloží jej do proměnné  
 print('-------------------------------------------------------------------------')
 print('\n \n')
 
@@ -108,7 +109,7 @@ def encrypt(key, plaintext):
     check_key(key)
     mp = (0, 0)
     #----------------------------------------------------------------------------
-    ciphertext = '' #Zde zadej text k dešifrování
+    ciphertext = ('' + dekodovani) #Zde zadej text k dešifrování
     #-----------------------------------------------------------------------------
     for p in plaintext:
         pp = find_pos(key, p)
