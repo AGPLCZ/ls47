@@ -5,7 +5,6 @@
 #
 # Originally written by Mirek Kratochvil (2017)
 # Python3 port by Bernhard Esslinger (Feb 2018)
-# Překlad, input, vzhled by AGPL (2018)
 
 import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
