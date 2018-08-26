@@ -174,14 +174,14 @@ if __name__ == '__main__':
 
     # zakomentuj key = derive_key ('' + pasw) pokud chceš aktivovat ruční zadávání abecedy
     
-    plan = (input("Chcete zadat klic nebo heslo?"))
+    plan = (input("Zadali jste heslo nebo klic?"))
 
-    if (plan == "klic"):
+    if (plan == "heslo"):
         key = derive_key('' + pasw)
         
     else:    
                 
-        key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') #odkomentuj key pokud chceš ručně zadávat abecedu
+        key = ('' + pasw) #odkomentuj key pokud chceš ručně zadávat abecedu
 
         # key = derive_key ('' + pasw)
     print('Klíč šifry:           ' + key)
