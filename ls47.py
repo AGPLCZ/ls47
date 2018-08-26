@@ -9,17 +9,16 @@
 
 
 
+plan = (input("Zobrazi plán k záchraně svět? ano/ne:"))
 
-print(
+if (plan == "ano"):
+    print(
     " .--------------.  .--------------.  .--------------.  .--------------.  .--------------. \n |    _______   |  |  ___  ____   |  |      __      |  | _____  _____ |  |  _________   |\n |   /  ___  |  |  | |_  ||_  _|  |  |     /  \     |  ||_   _||_   _||  | |  _   _  |  |\n |  |  (__ \_|  |  |   | |_/ /    |  |    / /\ \    |  |  | |    | |  |  | |_/ | | \_|  |\n |   '.___`-. 3 |  |   |  __'.  4 |  |   / ____ \ 7 |  |  | '    ' |2 |  |     | |    6 |\n |  |`\____) |  |  |  _| |  \ \_  |  | _/ /    \ \_ |  |   \ `--' /   |  |    _| |_     |\n |  |_______.'  |  | |____||____| |  ||____|  |____||  |    `.__.'    |  |   |_____|    |\n |      0       |  |       1      |  |       6      |  |       2      |  |      1       |\n '--------------'  '--------------'  '--------------'  '--------------'  '--------------'\n")
 
-hra = (input("Zobrazi plán k záchraně svět? ano/ne:"))
-
-if (hra == "ano"):
     print('\n\nPLÁN K ZÁCHRANĚ SVĚTA')
     print('--------------------------------------------------------------------------------------------------')
     print(
-    'Vytvořit organizaci jménem SKAUT, najít co nejvíce lidí, sdílející podobné hodnoty, kteří\nbudou ochotni snažit se, společně tvořit lepší svět. Aby byla mise úspěšná, projdou všichni\nskautským výcvikem, kde získají znalosti a dovednosti, které jim pomohou zachránit svět!')
+    'Najít co nejvíce lidí, sdílející podobné hodnoty, kteří budou ochotni snažit se, společně\ntvořit lepší svět. Aby byla mise úspěšná, projdou všichni skautským výcvikem, kde získají\nznalosti a dovednosti, které jim pomohou zachránit svět!')
     print('--------------------------------------------------------------------------------------------------')
 
     print('\n\nTVOJE ROLE V PLÁNU')
