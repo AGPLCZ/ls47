@@ -20,13 +20,21 @@ print('-------------------------------------------------------------------------
 print("Základní rozložení klíče:" + letters +"")
 pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 
-zadani = (input("Chceš šifrovat nebo dešifrovat?"))
 
-if (zadani == "šifrovat"):
+    
+pokracovat = True
+while pokracovat:
+    zadani = input("Chceš šifrovat nebo dešifrovat?")
+    if (zadani == "šifrovat" or zadani == "dešifrovat"):
+        if (zadani == "šifrovat"):
+          text = input("Zadej text pro zašifrování:")  
+        else:
+          dekodovani = input("Zadejtext pro dešifrování:")
 
-    text = input("Zadej text pro zašifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
-else:
-   dekodovani = input("Zadejtext pro dešifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
+        pokracovat = False
+    else:
+        pass # nic se nestane
+
 
 def check_key(key):
     if len(key) != len(letters):
