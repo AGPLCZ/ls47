@@ -21,7 +21,7 @@ print('-------------------------------------------------------------------------
 
 print('\n\nZPRÁVA PRO TEBE')
 print('--------------------------------------------------------------------------------------------------')
-print ('\nSituace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná\nhrozba. Přidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív\nmusíš projít skautským výcvikem, která si mise žádá. Po té se dozvíš unikátní heslo ke každé tajné misi. \n')
+print ('\nSituace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba.\nPřidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít\nvýcvikem, která si mise žádá. Po té se dozvíš unikátní heslo ke každé tajné misi. \n')
 print('--------------------------------------------------------------------------------------------------')
 
 print('\n\nVÝPIS MISÍ')
@@ -52,12 +52,12 @@ print('-------------------------------------------------------------------------
     
 
 print('\n\nVSTUP')
-print('-------------------------------------------------------------------------')
+print('--------------------------------------------------------------------------------------------------')
 
 pasw = input("Zadej heslo které nakonfiguruje klíč šifry.\n") #získá od uživatele heslo a uloží jej do proměnné
 text = input("Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n") #získá od uživatele text k šifrování a uloží jej do proměnné   
 dekodovani = input("Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n") #získá od uživatele text k šifrování a uloží jej do proměnné  
-print('-------------------------------------------------------------------------')
+print('--------------------------------------------------------------------------------------------------')
 print('\n \n')
 
 
@@ -203,7 +203,7 @@ if __name__ == '__main__':
 
     # a bit of test!
     print('KONFIGURACE')
-    print('-------------------------------------------------------------------------')
+    print('--------------------------------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     #pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
@@ -217,16 +217,17 @@ if __name__ == '__main__':
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
     enc = encrypt_pad(key, '' + text) #Zde zadej text k zašifrování
-    print('-------------------------------------------------------------------------')
+    print('--------------------------------------------------------------------------------------------------')
     print('\n \n ')
     print('POZICE KARTIČEK  + string')
-    print('-------------------------------------------------------------------------')
+    print('--------------------------------------------------------------------------------------------------')
     print(str(tiles))
+    print('--------------------------------------------------------------------------------------------------')
     print('\n \n ')
     print('VÝSTUP')
-    print('-------------------------------------------------------------------------')
+    print('--------------------------------------------------------------------------------------------------')
     print('Šifrováný text:\n' + enc)
     dec = decrypt_pad(key, enc)
     print('Dešifrovaný text:\n' + dec)
-    print('-------------------------------------------------------------------------')
+    print('--------------------------------------------------------------------------------------------------')
 
