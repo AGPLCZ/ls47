@@ -5,11 +5,7 @@
 #
 # Originally written by Mirek Kratochvil (2017)
 # Python3 port by Bernhard Esslinger (Feb 2018)
-# inputy, překlad, by AGPL (2018)
-
-
-
-
+# inputy, manuální zadávání abecedy, překlad, by AGPL (2018)
 
 import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
@@ -22,7 +18,7 @@ print("\n\n .--------------.  .--------------.  .--------------.  .-------------
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
 
-pasw = input("Zadej heslo nebo klíč šifry. (To ovlivní konfuguraci klíče.)\n")  # získá od uživatele heslo a uloží jej do proměnné
+pasw = input("Zadej heslo nebo klíč šifry.\n")  # získá od uživatele heslo a uloží jej do proměnné
 
 zadani = (input("Chceš šifrovat nebo dešifrovat?"))
 
@@ -31,13 +27,6 @@ if (zadani == "šifrovat"):
     text = input("Zadej text pro zašifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
 else:
    dekodovani = input("Zadejtext pro dešifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
-
-
-#text = input(
-#    "Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
-#dekodovani = input(
-#    "Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
-
 
 def check_key(key):
     if len(key) != len(letters):
@@ -181,24 +170,13 @@ if __name__ == '__main__':
         key = ('' + pasw) # manualni zadání
     print('--------------------------------------------------------------------------------------------------')
     print('\n \n')
-
-    
-    
     print('KONFIGURACE')
     print('--------------------------------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-
-    
-
-    
     print('Klíč šifry:           ' + key)
-    
-
     if (plan == "heslo"):
         print('Heslo šifry:          ' + pasw)
-    
-    
     enc = encrypt_pad(key, '' + text)  # Zde zadej text k zašifrování
     print('--------------------------------------------------------------------------------------------------')
     print('\n \n ')
