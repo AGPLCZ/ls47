@@ -173,11 +173,17 @@ if __name__ == '__main__':
     # pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
 
     # zakomentuj key = derive_key ('' + pasw) pokud chceš aktivovat ruční zadávání abecedy
-    key = derive_key('' + pasw)
+    
+    plan = (input("Chcete zadat klic nebo heslo?"))
 
-    # key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') #odkomentuj key pokud chceš ručně zadávat abecedu
+    if (plan == "klic"):
+        key = derive_key('' + pasw)
+        
+    else:    
+                
+        key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') #odkomentuj key pokud chceš ručně zadávat abecedu
 
-    # key = derive_key ('' + pasw)
+        # key = derive_key ('' + pasw)
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
     enc = encrypt_pad(key, '' + text)  # Zde zadej text k zašifrování
