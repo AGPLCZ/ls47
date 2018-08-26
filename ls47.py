@@ -16,12 +16,12 @@ padding_size = 0 #počet přidaných znaků které se generují náhodně
 print (" .--------------.  .--------------.  .--------------.  .--------------.  .--------------. \n |    _______   |  |  ___  ____   |  |      __      |  | _____  _____ |  |  _________   |\n |   /  ___  |  |  | |_  ||_  _|  |  |     /  \     |  ||_   _||_   _||  | |  _   _  |  |\n |  |  (__ \_|  |  |   | |_/ /    |  |    / /\ \    |  |  | |    | |  |  | |_/ | | \_|  |\n |   '.___`-. 3 |  |   |  __'.  4 |  |   / ____ \ 7 |  |  | '    ' |2 |  |     | |    6 |\n |  |`\____) |  |  |  _| |  \ \_  |  | _/ /    \ \_ |  |   \ `--' /   |  |    _| |_     |\n |  |_______.'  |  | |____||____| |  ||____|  |____||  |    `.__.'    |  |   |_____|    |\n |      0       |  |       1      |  |       6      |  |       2      |  |      1       |\n '--------------'  '--------------'  '--------------'  '--------------'  '--------------'\n")
 print('TAJNÝ PLÁN K ZÁCHRANĚ SVĚTA')
 print('--------------------------------------------------------------------------------------------------')
-print ('Vytvořit organizaci jménem SKAUT, najít co nejvíce lidí, sdílející podobné hodnoty, kteří\nbudou ochotni snažit se, společně tvořit lepší svět. Aby mise byla úspěšná, projdou skautským\nvýcvikem, kde získají znalosti a dovednosti, které jim pomohou zachránit svět!\n')
+print ('Vytvořit organizaci jménem SKAUT, najít co nejvíce lidí, sdílející podobné hodnoty, kteří\nbudou ochotni snažit se, společně tvořit lepší svět. Aby mise byla úspěšná, projdou skautským\nvýcvikem, kde získají znalosti a dovednosti, které jim pomohou zachránit svět!')
 print('--------------------------------------------------------------------------------------------------')
 
 print('\n\nZPRÁVA PRO TEBE')
 print('--------------------------------------------------------------------------------------------------')
-print ('\nSituace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba.\nPřidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít\nskautským výcvikem, která si mise žádá. Po té se dozvíš unikátní heslo ke každé tajné misi. \n')
+print ('Situace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba.\nPřidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít\nskautským výcvikem, která si mise žádá. Po té se dozvíš unikátní heslo ke každé tajné misi.')
 print('--------------------------------------------------------------------------------------------------')
 
 print('\n\nVÝPIS MISÍ')
