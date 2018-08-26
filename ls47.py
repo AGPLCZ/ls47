@@ -19,14 +19,18 @@ print ('To jsou kamarádi, společenství lidí, kteří sdílejí podobné hodn
 print ("  ____    _    _     ____ ___   _____  _       _ _   _    _       __  __ ___ ____  _____   ___\n |  _ \  / \  | |   / ___|_ _| |_   _|/ \     | | \ | |  / \     |  \/  |_ _/ ___|| ____| |__ \n | | | |/ _ \ | |   \___ \| |    | | / _ \ _  | |  \| | / _ \    | |\/| || |\___ \|  _|     / /\n | |_| / ___ \| |___ ___) | |    | |/ ___ | |_| | |\  |/ ___ \   | |  | || | ___) | |___   |_| \n |____/_/   \_|_____|____|___|   |_/_/   \_\___/|_| \_/_/   \_\  |_|  |_|___|____/|_____|  (_) \n")
 
 
-#MISE 1 - vidis_li_ze_nekdo_si_chce_koupit_petlahev,_vysvetli_mu_proc_by_si_ji_nemel_kupovat,_proc_je_plast_problem
+#MISE 1 - vidis_li_nekoho,_ze_si_chce_koupit_petlahev,_vysvetli_mu,_proc_kupovat_plast_je_problem
+#heslo je:skaut
 
 #MISE 2 - tento_tyden_sostred_sve_sily_na_sber_odpadku_na_zemi
+#heslo je:skaut
+
+#MISE 3 heslo je: rc3jai_5577
 
 
 mise = (input("Pokud chceš plnit tajnou MISI, zadej číslo mise:"))
 if (mise == "1"):
-    print("\n\nMISE 1\nt/lp((,42uzmumnom)pl8u0gwawbsxhvy?mq_et..r?bt2/4@61:,(j4,/7xky3t!0w93?5:*n6i_boq)otwah(-oxgnvb7i+611ztisw")
+    print("t/lp((,42?s/ybrz+thl/j/@4l1ayeclqpolua!g.?6x57cgsxm8f!p.yn5ym!?)h-khh56_!!:(*??40@hr74e")
 
 
 if (mise == "2"):
@@ -38,9 +42,9 @@ if (mise == "2"):
 print('\n\nVSTUP')
 print('-------------------------------------------------------------------------')
 
-pasw = input("Zadej heslo které nakonfiguruje klíč šifry. \n ") #získá od uživatele heslo a uloží jej do proměnné
-text = input("Zadejtext pro zašifrování.  \n Pokud chceš dešifrovat zprávu, nech toto pole prázdné. \n") #získá od uživatele text k šifrování a uloží jej do proměnné  
-dekodovani = input("Zadejtext pro dešifrování: \n Pokud jsi již zadal text k zašifrování, nech toto pole prázdné. \n ") #získá od uživatele text k šifrování a uloží jej do proměnné  
+pasw = input("Zadej heslo které nakonfiguruje klíč šifry.\n") #získá od uživatele heslo a uloží jej do proměnné
+text = input("Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n") #získá od uživatele text k šifrování a uloží jej do proměnné  
+dekodovani = input("Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n") #získá od uživatele text k šifrování a uloží jej do proměnné  
 print('-------------------------------------------------------------------------')
 print('\n \n')
 
