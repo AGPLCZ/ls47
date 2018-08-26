@@ -15,7 +15,7 @@ import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0  # počet přidaných znaků které se generují náhodně
-
+text = ('')
 dekodovani = ('')
 print("\n\n .--------------.  .--------------.  .--------------.  .--------------.\n |   _____      |  |    _______   |  |   _    _     |  |   _______    |\n |  |_   _|     |  |   /  ___  |  |  |  | |  | |    |  |  |  ___  |   |\n |    | |       |  |  |  (__ \_|  |  |  | |__| |_   |  |  |_/  / /    |\n |    | |   _ 6 |  |   '.___`-. 3 |  |  |____   _|7 |  |      / /  1  |\n |   _| |__/ |  |  |  |`\____) |  |  |      _| |_   |  |     / /      |\n |  |________|  |  |  |_______.'  |  |     |_____|  |  |    /_/       |\n |       4      |  |       1      |  |        6     |  |       0      |\n '--------------'  '--------------'  '--------------'  '--------------'\n")
 
@@ -37,8 +37,6 @@ else:
 #    "Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
 #dekodovani = input(
 #    "Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
-print('--------------------------------------------------------------------------------------------------')
-print('\n \n')
 
 
 def check_key(key):
@@ -176,38 +174,42 @@ def decrypt_pad(key, ciphertext):
 
 if __name__ == '__main__':
     # a bit of test!
+    plan = (input("Zadali jste heslo nebo klic?"))
+    if (plan == "heslo"):
+        key = derive_key('' + pasw) # heslo
+    else:    
+        key = ('' + pasw) # manualni zadání
+    print('--------------------------------------------------------------------------------------------------')
+    print('\n \n')
+
+    
+    
     print('KONFIGURACE')
     print('--------------------------------------------------------------------------------------------------')
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
-    # pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
 
-    # zakomentuj key = derive_key ('' + pasw) pokud chceš aktivovat ruční zadávání abecedy
     
-    plan = (input("Zadali jste heslo nebo klic?"))
+
+    
+    print('Klíč šifry:           ' + key)
+    
 
     if (plan == "heslo"):
-        key = derive_key('' + pasw)
-        
-    else:    
-                
-        key = ('' + pasw) #odkomentuj key pokud chceš ručně zadávat abecedu
-
-        # key = derive_key ('' + pasw)
-    print('Klíč šifry:           ' + key)
-    print('Heslo šifry:          ' + pasw)
+        print('Heslo šifry:          ' + pasw)
+    
+    
     enc = encrypt_pad(key, '' + text)  # Zde zadej text k zašifrování
     print('--------------------------------------------------------------------------------------------------')
     print('\n \n ')
-    print('POZICE KARTIČEK  + string')
-    print('--------------------------------------------------------------------------------------------------')
-    print(str(tiles))
-    print('--------------------------------------------------------------------------------------------------')
-    print('\n \n ')
+    #print('POZICE KARTIČEK  + string')
+    #print('--------------------------------------------------------------------------------------------------')
+    #print(str(tiles))
+    #print('--------------------------------------------------------------------------------------------------')
     print('VÝSTUP')
     print('--------------------------------------------------------------------------------------------------')
-    print('Šifrováný text:\n' + enc)
+    print('Zašifrováný text:' + enc)
     dec = decrypt_pad(key, enc)
-    print('Dešifrovaný text:\n' + dec)
+    print('Dešifrovaný text:' + dec)
     print('--------------------------------------------------------------------------------------------------')
 
