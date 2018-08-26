@@ -21,7 +21,7 @@ print('-------------------------------------------------------------------------
 
 print('\n\nZPRÁVA PRO TEBE')
 print('--------------------------------------------------------------------------------------------------')
-print ('Situace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba.\nPřidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít\nskautským výcvikem, která si mise žádá. Po té se dozvíš unikátní heslo ke každé tajné misi.')
+print ('Situace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba.\nPřidej se a pomáhej! V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít\nskautským výcvikem, která si mise žádá. Po té se dozvíš unikátní heslo, ke každé tajné misi.')
 print('--------------------------------------------------------------------------------------------------')
 
 print('\n\nVÝPIS MISÍ')
