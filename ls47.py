@@ -13,6 +13,7 @@ tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
 
+print ('Zdar, mám pro tebe zprávu, ne-máme moc času, tak se soustřeď.Skaut je největší světové hnutí, žes o nás nikdy neslyšel? SKAUT – To jsou kamarádi, přátelé, společenství lidí, kteří sdílejí podobné hodnoty a společně se snaží tvořit lepší svět.\n \n Situace je kritická, proto jsme se rozhodli oslovit právě tebe. Svět potřebuje nás, a my potřebujeme tvoji pomoc. Cvičíme stovky skautů, ale to nestačí. Potřebujeme víc. Je jedno kolik ti je, odkud jsi, nebo jaké máš známky. Skautem se nenarodíš, skautem se stáváš. Staň se skautem a ukaž co v tobě je. Staň se skautem a zachraň svět. \n \n Výcvik skautů probíhá každý týden ve ve Čtvrtek od 17:00 do 18:00. Sraz je na Orlovně v prvním patře. Získáš znalosti i dovednosti a dozvíš se jak můžeš pomáhat. \n \n  Skaut není hra, světu hrozí reálná hrozba! Přidej se a pomáhej. V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít výcvikem které si mise žádá. \n \n MISE 1 \n Vidíš li někoho, kdo si chce koupit petláhev, zeptej se ho proč si jí kupuje, a případně se zeptej jestli by se bez ní neobešel. Vysvětli mu důvod. \n \n ')
 
 print('VSTUP')
 print('-------------------------------------------------------------------------')
