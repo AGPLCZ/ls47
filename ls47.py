@@ -17,8 +17,8 @@ print("\n\n .--------------.  .--------------.  .--------------.  .-------------
 
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
-
-pasw = input("Zadej heslo nebo klíč šifry.\n")  # získá od uživatele heslo a uloží jej do proměnné
+print("Základní rozložení klíče:" + letters +"")
+pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 
 zadani = (input("Chceš šifrovat nebo dešifrovat?"))
 
@@ -172,7 +172,6 @@ if __name__ == '__main__':
     print('\n \n')
     print('KONFIGURACE')
     print('--------------------------------------------------------------------------------------------------')
-    print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     print('Klíč šifry:           ' + key)
     if (plan == "heslo"):
