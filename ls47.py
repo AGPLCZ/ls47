@@ -7,15 +7,32 @@
 # Python3 port by Bernhard Esslinger (Feb 2018)
 # inputy, překlad, by AGPL (2018)
 
+
 import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
 
-print ('Zdar, mám pro tebe zprávu, ne-máme moc času, tak se soustřeď.Skaut je největší světové hnutí, žes o nás nikdy neslyšel? SKAUT – To jsou kamarádi, přátelé, společenství lidí, kteří sdílejí podobné hodnoty a společně se snaží tvořit lepší svět.\n \n Situace je kritická, proto jsme se rozhodli oslovit právě tebe. Svět potřebuje nás, a my potřebujeme tvoji pomoc. Cvičíme stovky skautů, ale to nestačí. Potřebujeme víc. Je jedno kolik ti je, odkud jsi, nebo jaké máš známky. Skautem se nenarodíš, skautem se stáváš. Staň se skautem a ukaž co v tobě je. Staň se skautem a zachraň svět. \n \n Výcvik skautů probíhá každý týden ve ve Čtvrtek od 17:00 do 18:00. Sraz je na Orlovně v prvním patře. Získáš znalosti i dovednosti a dozvíš se jak můžeš pomáhat. \n \n  Skaut není hra, světu hrozí reálná hrozba! Přidej se a pomáhej. V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít výcvikem které si mise žádá. \n \n MISE 1 \n Vidíš li někoho, kdo si chce koupit petláhev, zeptej se ho proč si jí kupuje, a případně se zeptej jestli by se bez ní neobešel. Vysvětli mu důvod. \n \n ')
+print ('\n\nSKAUT – To jsou kamarádi, přátelé, společenství lidí, kteří sdílejí podobné hodnoty a společně se snaží tvořit lepší svět.\n \n \nSituace je kritická, svět potřebuje nás, a my potřebujeme tvoji pomoc. Světu hrozí reálná hrozba! Přidej se a pomáhej. V každé misi mohou působit jen ti způsobilí, proto nejdřív musíš projít skautským výcvikem které si mise žádá. Po té se dozvíš heslo ke každé tajné misi. \n \n')
 
-print('VSTUP')
+#MISE 1 - vidis_li_ze_nekdo_si_chce_koupit_petlahev,_vysvetli_mu_proc_by_si_ji_nemel_kupovat,_proc_je_plast_problem
+
+#MISE 2 - tento_tyden_sostred_sve_sily_na_sber_odpadku_na_zemi
+
+
+mise = (input("Pokud chceš plnit tajnou MISI, zadej číslo mise:"))
+if (mise == "1"):
+    print("\n\nMISE 1\nt/lp((,42uzmumnom)pl8u0gwawbsxhvy?mq_et..r?bt2/4@61:,(j4,/7xky3t!0w93?5:*n6i_boq)otwah(-oxgnvb7i+611ztisw")
+
+
+if (mise == "2"):
+    print("\n\nMISE 2\n756+5+iw7gmeav88?n3q,hh5lu54q@(v3?abw5/:p9ymsa9t4ybw")
+
+
+    
+
+print('\n\nVSTUP')
 print('-------------------------------------------------------------------------')
 
 pasw = input("Zadej heslo které nakonfiguruje klíč šifry. \n ") #získá od uživatele heslo a uloží jej do proměnné
@@ -189,8 +206,8 @@ if __name__ == '__main__':
     print('\n \n ')
     print('VÝSTUP')
     print('-------------------------------------------------------------------------')
-    print('Šifrováný text:     ' + enc)
+    print('Šifrováný text:\n' + enc)
     dec = decrypt_pad(key, enc)
-    print('Dešifrovaný text:   ' + dec)
+    print('Dešifrovaný text:\n' + dec)
     print('-------------------------------------------------------------------------')
 
