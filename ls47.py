@@ -16,17 +16,27 @@ letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0  # počet přidaných znaků které se generují náhodně
 
-
+dekodovani = ('')
 print("\n\n .--------------.  .--------------.  .--------------.  .--------------.\n |   _____      |  |    _______   |  |   _    _     |  |   _______    |\n |  |_   _|     |  |   /  ___  |  |  |  | |  | |    |  |  |  ___  |   |\n |    | |       |  |  |  (__ \_|  |  |  | |__| |_   |  |  |_/  / /    |\n |    | |   _ 6 |  |   '.___`-. 3 |  |  |____   _|7 |  |      / /  1  |\n |   _| |__/ |  |  |  |`\____) |  |  |      _| |_   |  |     / /      |\n |  |________|  |  |  |_______.'  |  |     |_____|  |  |    /_/       |\n |       4      |  |       1      |  |        6     |  |       0      |\n '--------------'  '--------------'  '--------------'  '--------------'\n")
 
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
 
-pasw = input("Zadej heslo které nakonfiguruje klíč šifry.\n")  # získá od uživatele heslo a uloží jej do proměnné
-text = input(
-    "Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
-dekodovani = input(
-    "Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
+pasw = input("Zadej heslo nebo klíč šifry. (To ovlivní konfuguraci klíče.)\n")  # získá od uživatele heslo a uloží jej do proměnné
+
+zadani = (input("Chceš šifrovat nebo dešifrovat?"))
+
+if (zadani == "šifrovat"):
+
+    text = input("Zadej text pro zašifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
+else:
+   dekodovani = input("Zadejtext pro dešifrování:")  # získá od uživatele text k šifrování a uloží jej do proměnné
+
+
+#text = input(
+#    "Zadejtext pro zašifrování.\nPokud chceš dešifrovat zprávu, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
+#dekodovani = input(
+#    "Zadejtext pro dešifrování:\nPokud jsi již zadal text k zašifrování, nech toto pole prázdné.\n")  # získá od uživatele text k šifrování a uloží jej do proměnné
 print('--------------------------------------------------------------------------------------------------')
 print('\n \n')
 
