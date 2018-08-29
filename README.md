@@ -1,12 +1,12 @@
-# Simetrická šifra LS47
-S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky, Tato šifra se vám může hodit, když nemáte u sebe počítat, nebo když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí.LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it
+# Simetrická šifra S47
+S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky. Šifra se Vám může hodit, když nemáte u sebe počítat, či když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí. LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it a spusťe.
 
 ![Tiles printed out](skaut.png)
 
 
 ### Znaková tabulka
 
-LS47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace.
+S47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace.
 ```
 _ a b c d e f
 g h i j k l m
