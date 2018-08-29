@@ -194,7 +194,6 @@ Posouváte se ze šikma dolů...
 
 Heslo by mělo mít alespoň `dvacet znaků` abychom dosáhli dostatečné entropie.
 
-![Tiles printed out](tiles.jpg)
 
 
 ## References
