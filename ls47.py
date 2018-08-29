@@ -8,7 +8,7 @@
 # + input, + manuální zadávání abecedy, překlad, design LS47, by AGPL (2018)
 
 import random
-letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
+letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+@/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0  # počet přidaných znaků které se generují náhodně
 text = ('')
