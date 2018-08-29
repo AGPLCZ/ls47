@@ -1,7 +1,7 @@
 # Simetrická šifra LS47
 S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky, Tato šifra se vám může hodit, když nemáte u sebe počítat, nebo když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí.LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it
 
-![Tiles printed out](kaminsky.png)
+![Tiles printed out](skaut.png)
 
 
 ### Znaková tabulka
