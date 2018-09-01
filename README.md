@@ -6,8 +6,9 @@ S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze š
 
 
 ### Znaková tabulka
+Hvězdička (násobení) * v novější verzi nahrazena @
+Podtržítko _ ve scriptu sl47.py lze zaměnit za mezeru.
 
-S47 obsahuje navíc základní interpunkce, pro možnost psát výrazy a citace.
 ```
 _ a b c d e f
 g h i j k l m
@@ -18,7 +19,7 @@ u v w x y z .
 / : ? ! ' ( )
 ```
 
-Kostičky při přiblížení vypadají takto, je na nich napsaná poloha tzv. offset, která se bude využívat k šifrování a dešifrování.
+Kostičky při přiblížení vypadají takto, je na nich napsaná původní poloha tzv. offset, která se bude využívat k šifrování a dešifrování.
 
 ```
 /-----\  /-----\  /-----\  /-----\  /-----\
