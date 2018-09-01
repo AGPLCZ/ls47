@@ -43,13 +43,17 @@ K ručnímu šifrování je zapotřebý ještě takzvaný "Marker" značka, mů�
 
 Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Tudíš kostičky můžete libovolně zamíchat, ale znalost rozložení kostiček je klíčové k dešifrování zprávy, proto si permutaci poznamenejte. Další možností je využít expanzní klíč, to je algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček, o tom si povíme až na konci.  
 
+Vstupní písmena: Yes
+První vstupní písmeno je "Y"
+
 
 
 ### 4 kroky k zašifrování písmene
-1. K pozici vstupního písmene přičti offset z pozice značky [ ] = pozice zašifrovaného písmene
+1. Vstupní písmeno + offset [značky] = šifrované písmeno
 2. Řádek se vstupním písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
-4. Žnačku [ ] posuneme o offset z kostičky se zašifrovaným písmenem
+4. [Žnačku] posuneme o offset z kostičky se zašifrovaným písmenem
+
 
 # Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
@@ -184,7 +188,12 @@ Proces dešifrování je podobný, především offset se `odečítá`.
 ### Expanzní klíč - heslo
 Kostičky si rozložíme před sebe do čtverce, jejich permutace je tajný klíč k zašifrování a dešifrování. Můžete využít algoritmus, který funguje na bázi hesla, aby jste si nemuseli pamatovat rozložení kostiček.  
 
+Heslo šifry = nástroj na vytvoření klíče
+Podle pozice (offsetu) na vstupním písmeni, posuň první řádek do prava a sloupec se vstupním písmenem dolů.
+
+
 Heslo: `ahoj`
+První vstupní písmeno = "A", jeho původní pozice (offset) = 1,0
 - Podivám se na první písmeno A a zjistím z něj offset 
 - Posunu první řádek a sloupec o offset na písmeni A (do prava a pak dolů)
 - Podivám se na druhé písmeno H a zjistím z něj offset 
