@@ -5,12 +5,13 @@
 #
 # Originally written by Mirek Kratochvil (2017)
 # Python3 port by Bernhard Esslinger (Feb 2018)
-# + input, + manuální zadávání abecedy, překlad, design LS47, by AGPL (2018)
+# input, překlad,design by AGPL (2018)
+
 
 import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+@/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
-padding_size = 0  # počet přidaných znaků které se generují náhodně
+
 text = ('')
 dekodovani = ('')
 print("\n\n .--------------.  .--------------.  .--------------.  .--------------.\n |   _____      |  |    _______   |  |   _    _     |  |   _______    |\n |  |_   _|     |  |   /  ___  |  |  |  | |  | |    |  |  |  ___  |   |\n |    | |       |  |  |  (__ \_|  |  |  | |__| |_   |  |  |_/  / /    |\n |    | |   _ 6 |  |   '.___`-. 3 |  |  |____   _|7 |  |      / /  1  |\n |   _| |__/ |  |  |  |`\____) |  |  |      _| |_   |  |     / /      |\n |  |________|  |  |  |_______.'  |  |     |_____|  |  |    /_/       |\n |       4      |  |       1      |  |        6     |  |       0      |\n '--------------'  '--------------'  '--------------'  '--------------'\n")
@@ -18,6 +19,7 @@ print("\n\n .--------------.  .--------------.  .--------------.  .-------------
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
 print("Základní rozložení klíče:" + letters +"")
+padding_size = int(input("Zadej počet přidaných znaků:"))    # počet přidaných znaků které se generují náhodně
 pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 
 
