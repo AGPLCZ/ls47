@@ -21,6 +21,7 @@ print('-------------------------------------------------------------------------
 print("Základní rozložení klíče:" + letters +"")
 
 
+
 def nacti_cislo():
     spatne = True
     while spatne:
@@ -29,7 +30,7 @@ def nacti_cislo():
             cislo = int(odpoved)
             spatne = False
         except ValueError:
-            print("text_chyba")  
+            pass  
     else:
         return odpoved
 
@@ -37,8 +38,15 @@ def nacti_cislo():
 padding_size = int(nacti_cislo())
 
 
-pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 
+pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
+x = len(pasw)
+if (x < 48 or x > 49):
+    plan = "heslo"
+    print("Zadali jste heslo")
+else:
+    plan = "klic"
+    print("Byl zadán klíč")
 
     
 pokracovat = True
@@ -191,7 +199,7 @@ def decrypt_pad(key, ciphertext):
 
 if __name__ == '__main__':
     # a bit of test!
-    plan = (input("Zadali jste heslo nebo klic?"))
+    #plan = (input("Zadali jste heslo nebo klic?"))
     if (plan == "heslo"):
         key = derive_key('' + pasw) # heslo
     elif (plan == "klic"):  
