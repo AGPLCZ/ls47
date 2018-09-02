@@ -19,7 +19,24 @@ print("\n\n .--------------.  .--------------.  .--------------.  .-------------
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
 print("Základní rozložení klíče:" + letters +"")
-padding_size = int(input("Zadej počet přidaných znaků:"))    # počet přidaných znaků které se generují náhodně
+
+
+def nacti_cislo():
+    spatne = True
+    while spatne:
+        odpoved = input("Kolik přidat náhodných znaků?")
+        try:
+            cislo = int(odpoved)
+            spatne = False
+        except ValueError:
+            print("text_chyba")  
+    else:
+        return odpoved
+
+
+padding_size = int(nacti_cislo())
+
+
 pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 
 
@@ -171,13 +188,16 @@ def decrypt_pad(key, ciphertext):
     check_key(key)
     return decrypt(key, ciphertext)[padding_size:]
 
+
 if __name__ == '__main__':
     # a bit of test!
     plan = (input("Zadali jste heslo nebo klic?"))
     if (plan == "heslo"):
         key = derive_key('' + pasw) # heslo
-    else:    
+    elif (plan == "klic"):  
         key = ('' + pasw) # manualni zadání
+    else:
+      print("chyba")
     print('--------------------------------------------------------------------------------------------------')
     print('\n \n')
     print('KONFIGURACE')
