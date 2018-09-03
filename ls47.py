@@ -12,21 +12,25 @@ import random
 letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+@/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 
+
 text = ('')
 dekodovani = ('')
 print("\n\n .--------------.  .--------------.  .--------------.  .--------------.\n |   _____      |  |    _______   |  |   _    _     |  |   _______    |\n |  |_   _|     |  |   /  ___  |  |  |  | |  | |    |  |  |  ___  |   |\n |    | |       |  |  |  (__ \_|  |  |  | |__| |_   |  |  |_/  / /    |\n |    | |   _ 6 |  |   '.___`-. 3 |  |  |____   _|7 |  |      / /  1  |\n |   _| |__/ |  |  |  |`\____) |  |  |      _| |_   |  |     / /      |\n |  |________|  |  |  |_______.'  |  |     |_____|  |  |    /_/       |\n |       4      |  |       1      |  |        6     |  |       0      |\n '--------------'  '--------------'  '--------------'  '--------------'\n")
 
+print('\nKONSTANTNÍ PARAMETRY')
+print('--------------------------------------------------------------------------------------------------')
+print("Základní rozložení klíče 7x7:" + letters +"")
+print('--------------------------------------------------------------------------------------------------')
+
 print('\nZADEJ VSTUPNÍ DATA')
 print('--------------------------------------------------------------------------------------------------')
-print("Základní rozložení klíče:" + letters +"")
-
 
 
 
 def nacti_cislo():
     spatne = True
     while spatne:
-        odpoved = input("Kolik přidat náhodných znaků?")
+        odpoved = input("Kolik chcete přidat na začátek náhodných znaků:")
         try:
             cislo = int(odpoved)
             spatne = False
@@ -39,7 +43,7 @@ def nacti_cislo():
 padding_size = int(nacti_cislo())
 
 
-pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
+pasw = input("Zadej expanzní klíč, nebo soukromý klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 x = len(pasw) #kolik zadaných znaků
 
 
@@ -202,13 +206,13 @@ if (countklic_a > 1 or countklic_b > 1 or countklic_c > 1 or countklic_d > 1 or 
 
 if (x < 49 or x > 49 or jetoheslo > 1):
     plan = "heslo"
-    print('Zadali jste heslo') 
+    print('Vstup použit jako expanzní klíč! ') 
 else:
     plan = "klic"
-    print("Byl zadán klíč")
+    print("Byl zadán soukromý klíč s permutací!")
 
 if (x == 49 and jetoheslo > 1):
-    print("Nezada-li jste špatně klíč?")
+    print("Nezada-li jste špatně soukromý klíč?")
 
     
 pokracovat = True
