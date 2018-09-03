@@ -22,6 +22,7 @@ print("Základní rozložení klíče:" + letters +"")
 
 
 
+
 def nacti_cislo():
     spatne = True
     while spatne:
@@ -38,15 +39,176 @@ def nacti_cislo():
 padding_size = int(nacti_cislo())
 
 
-
 pasw = input("Zadej heslo, nebo klíč:")  # získá od uživatele heslo a uloží jej do proměnné
-x = len(pasw)
-if (x < 48 or x > 49):
+x = len(pasw) #kolik zadaných znaků
+
+
+zadanyklic = pasw
+jetoheslo = 0
+countklic_a = 0
+countklic_b = 0
+countklic_c = 0
+countklic_d = 0
+countklic_e = 0
+countklic_f = 0
+countklic_g = 0
+countklic_h = 0
+countklic_i = 0
+countklic_j = 0
+countklic_k = 0
+countklic_l = 0
+countklic_m = 0
+countklic_n = 0
+countklic_o = 0
+countklic_p = 0
+countklic_q = 0
+countklic_r = 0
+countklic_s = 0
+countklic_t = 0
+countklic_u = 0
+countklic_v = 0
+countklic_w = 0
+countklic_x = 0
+countklic_y = 0
+countklic_z = 0
+countklic_tecka = 0
+countklic_0 = 0
+countklic_1 = 0
+countklic_2 = 0
+countklic_3 = 0
+countklic_4 = 0
+countklic_5 = 0
+countklic_6 = 0
+countklic_7 = 0
+countklic_8 = 0
+countklic_9 = 0
+countklic_carka = 0
+countklic_minus = 0
+countklic_plus = 0
+countklic_zavinac = 0
+countklic_lomeno = 0
+countklic_dvoutecka = 0
+countklic_otaznik = 0
+countklic_vykricnik = 0
+countklic_uvozovka = 0
+countklic_lzavorka = 0
+countklic_pzavorka = 0
+
+
+
+
+
+for char in zadanyklic:
+    if char == 'a':
+        countklic_a += 1    
+    if char == 'b':
+        countklic_b += 1
+    if char == 'c':
+        countklic_c += 1
+    if char == 'd':
+        countklic_d += 1
+    if char == 'e':
+        countklic_e += 1
+    if char == 'f':
+        countklic_f += 1
+    if char == 'g':
+        countklic_g += 1
+    if char == 'h':
+        countklic_h += 1
+    if char == 'i':
+        countklic_i += 1
+    if char == 'j':
+        countklic_j += 1
+    if char == 'k':
+        countklic_k += 1
+    if char == 'l':
+        countklic_l += 1
+    if char == 'm':
+        countklic_m += 1
+    if char == 'n':
+        countklic_n += 1
+    if char == 'o':
+        countklic_o += 1
+    if char == 'p':
+        countklic_p += 1
+    if char == 'q':
+        countklic_q += 1
+    if char == 'r':
+        countklic_r += 1
+    if char == 's':
+        countklic_s += 1
+    if char == 't':
+        countklic_t += 1
+    if char == 'u':
+        countklic_u += 1
+    if char == 'v':
+        countklic_v += 1
+    if char == 'w':
+        countklic_w += 1
+    if char == 'x':
+        countklic_x += 1
+    if char == 'y':
+        countklic_y += 1
+    if char == 'z':
+        countklic_z += 1
+    if char == '.':
+        countklic_tecka += 1
+    if char == '0':
+        countklic_0 += 1
+    if char == '1':
+        countklic_1 += 1
+    if char == '2':
+        countklic_2 += 1
+    if char == '3':
+        countklic_3 += 1
+    if char == '4':
+        countklic_4 += 1
+    if char == '5':
+        countklic_5 += 1
+    if char == '6':
+        countklic_6 += 1
+    if char == '7':
+        countklic_7 += 1
+    if char == '8':
+        countklic_8 += 1
+    if char == '9':
+        countklic_9 += 1
+    if char == ',':
+        countklic_carka += 1
+    if char == '-':
+        countklic_minus += 1
+    if char == '+':
+        countklic_plus += 1
+    if char == '@':
+        countklic_zavinac += 1
+    if char == '/':
+        countklic_lomeno += 1
+    if char == ':':
+        countklic_dvoutecka += 1
+    if char == '?':
+        countklic_otaznik += 1
+    if char == '!':
+        countklic_vykricnik += 1
+    if char == "'":
+        countklic_uvozovka += 1
+    if char == '(':
+        countklic_lzavorka += 1
+    if char == ')':
+        countklic_pzavorka += 1
+  
+
+if (countklic_a > 1 or countklic_b > 1 or countklic_c > 1 or countklic_d > 1 or countklic_e > 1 or countklic_f > 1 or countklic_g > 1 or countklic_h > 1 or countklic_i > 1 or countklic_j > 1 or countklic_k > 1 or countklic_l > 1 or countklic_m > 1 or countklic_n > 1 or countklic_o > 1 or countklic_p > 1 or countklic_q > 1 or countklic_r > 1 or countklic_s > 1 or countklic_t > 1 or countklic_u > 1 or countklic_v > 1 or countklic_w > 1 or countklic_x > 1 or countklic_y > 1 or countklic_z > 1 or countklic_tecka > 1 or countklic_0 > 1 or countklic_1 > 1 or countklic_2 > 1 or countklic_3 > 1 or countklic_4 > 1 or countklic_5 > 1 or countklic_6 > 1 or countklic_7 > 1 or countklic_8 > 1 or countklic_9 > 1 or countklic_carka > 1 or countklic_minus > 1 or countklic_plus > 1 or countklic_zavinac > 1 or countklic_lomeno > 1 or countklic_dvoutecka > 1 or countklic_otaznik > 1 or countklic_vykricnik > 1 or countklic_uvozovka > 1 or countklic_lzavorka > 1 or countklic_pzavorka > 1):
+    jetoheslo = 2
+
+if (x < 49 or x > 49 or jetoheslo > 1):
     plan = "heslo"
-    print("Zadali jste heslo")
+    print('Zadali jste heslo') 
 else:
     plan = "klic"
     print("Byl zadán klíč")
+
+if (x == 49 and jetoheslo > 1):
+    print("Nezada-li jste špatně klíč?")
 
     
 pokracovat = True
