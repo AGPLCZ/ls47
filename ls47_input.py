@@ -43,7 +43,7 @@ def nacti_cislo():
 padding_size = int(nacti_cislo())
 
 
-pasw = input("Zadej expanzní klíč, nebo soukromý klíč:")  # získá od uživatele heslo a uloží jej do proměnné
+pasw = input("Zadej expanzní heslo, nebo soukromý klíč:")  # získá od uživatele heslo a uloží jej do proměnné
 x = len(pasw) #kolik zadaných znaků
 
 
@@ -206,7 +206,7 @@ if (countklic_a > 1 or countklic_b > 1 or countklic_c > 1 or countklic_d > 1 or 
 
 if (x < 49 or x > 49 or jetoheslo > 1):
     plan = "heslo"
-    print('Vstup použit jako expanzní klíč! ') 
+    print('Vstup použit jako expanzní heslo! ') 
 else:
     plan = "klic"
     print("Byl zadán soukromý klíč s permutací!")
@@ -217,9 +217,9 @@ if (x == 49 and jetoheslo > 1):
     
 pokracovat = True
 while pokracovat:
-    zadani = input("Chceš šifrovat nebo dešifrovat?")
-    if (zadani == "šifrovat" or zadani == "dešifrovat"):
-        if (zadani == "šifrovat"):
+    zadani = input("Chceš šifrovat nebo dešifrovat? š/d")
+    if (zadani == "š" or zadani == "d"):
+        if (zadani == "š"):
           text = input("Zadej text pro zašifrování:")  
         else:
           dekodovani = input("Zadejtext pro dešifrování:")
