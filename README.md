@@ -1,5 +1,5 @@
-# Simetrická šifra S47
-S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky. Šifra se Vám může hodit, když nemáte u sebe počítat, či když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí. LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it a spusťe.
+# Simetrická šifra LS47
+LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky. Šifra se Vám může hodit, když nemáte u sebe počítat, či když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí. LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it a spusťe.
 
 ![Tiles printed out](skaut.png)
 ![Tiles printed out](title.svg)
@@ -7,7 +7,7 @@ S47 je kostičková šifra, obstojí proti síle výkonného počítače, lze š
 
 ### Znaková tabulka
 Hvězdička (násobení) * v novější verzi nahrazena @
-Podtržítko _ ve scriptu sl47.py lze zaměnit za mezeru.
+Podtržítko _ ve scriptu ls47.py lze zaměnit za mezeru.
 
 ```
 _ a b c d e f
