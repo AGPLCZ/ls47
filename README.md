@@ -1,5 +1,5 @@
 # Symetrická šifra LS47
-LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky. Šifra se Vám může hodit, když nemáte u sebe počítat, či když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí. LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it a spusťe.
+LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze šifrovat a dešifrovat zcela ručně. Vychází ze šifry ElsieFour (LC4) popsaná Alanem Kaminsky. Šifra se Vám může hodit, když nemáte u sebe počítat, či když mu nedůvěřujete, přesto potřebujete zajistit maximální soukromí. LS47 je mírně vylepšená, jsou přidané znaky, původní velikost pole bylo 6x6, a v této rozšířené verzi je pole 7x7, aby bylo možné šifrovat některé strukturované informace. K návodu je přiložen krátký kód napsaný v Pythonu, kód vložte například do https://repl.it a spusťte.
 
 ![Tiles printed out](skaut.png)
 
@@ -37,7 +37,7 @@ Kostičky při přiblížení vypadají takto, je na nich napsaná původní pol
    .        .
 ```
 
-K ručnímu šifrování je zapotřebý ještě takzvaný "Marker" značka, může to být libovolný předmět, kamínek či kroužek. 
+K ručnímu šifrování je zapotřebí ještě takzvaný "Marker" značka, může to být libovolný předmět, kamínek či kroužek. 
 
 ### Jak na to
 
@@ -52,7 +52,7 @@ První vstupní písmeno je "Y"
 1. Vstupní písmeno + offset [značky] = šifrované písmeno
 2. Řádek se vstupním písmenem rotujeme o 1 doprava
 3. Sloupec se zašifrovaným písmenem o 1 dolů
-4. [Žnačku] posuneme o offset z kostičky se zašifrovaným písmenem
+4. [Značku] posuneme o offset z kostičky se zašifrovaným písmenem
 
 
 # Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
@@ -71,7 +71,7 @@ Takto vypadá náš tajný klíč, podle kterého zašifrujeme a dešifrujeme zp
 
 
 #### Najděte pozici vstupního písmena
-Chcemeli zašifrovat písmeno: `Y`, najděte takzvané `vstupní písmeno` či `vstupní pozici` = písmeno Y
+Chceme-li zašifrovat písmeno: `Y`, najděte takzvané `vstupní písmeno` či `vstupní pozici` = písmeno Y
 
 
 ```
@@ -105,7 +105,7 @@ Kostička označená značkou Marker s písmenem `E` má na sobě `offset` to je
 Nyní zašifrujeme písmeno Y
 - Od jeho polohy nalezneme zašifrované písmeno.
 - Od vstupního písmene počítejte cestu k zašifrovanému písmeni.
-- Offset písmene E je (5,0), to znamená že od písmene Y se posunume po kostičkách o 5 do prava.
+- Offset písmene E je (5,0), to znamená že od písmene Y se posuňme po kostičkách o 5 do prava.
 
 Definice: Najděte `pozici vstupního písmene`, od toho písmene přičtěte `offset` z pozice kde se nachází značka (marker) = pozice zašifrovaného písmena
 
