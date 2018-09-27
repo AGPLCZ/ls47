@@ -156,7 +156,7 @@ Zde je hotová rotace o jedna dolů u sloupce kde se nacházelo W - zašifrovan�
 ```
 
  /-----\
- |     |          Žnačku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
+ |     |          Značku (Marker) posuneme o offset na kostičce se zašifrovaným písmenem
  | w  2|          Nyní se podívejte na zašifrovanou kostičku - W a značku posnuňte o offset (2,3)
  |   3 |          Značku posouváte od značky. Ke značce připočítejte offset zašifrovaného písmene.
  \-----/
