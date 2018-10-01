@@ -3,9 +3,8 @@ LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze �
 
 ![Tiles printed out](skaut.png)
 
-### Prolomení šifry
-Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 pokusů. Což je několik kvadrilionů možností. 
-
+### Prolomení šifry 
+Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 pokusů. Což je několik kvadrilionů možností. Prolomení by trvalo déle než 100 let.
 
 
 ### Znaková tabulka
