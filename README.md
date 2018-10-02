@@ -5,7 +5,7 @@ LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze �
 
 ### Prolomení šifry 
 Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 kombinací.
- Toto je počet potřebných kombinací: 3 484 491 437 270 409 86 586 495 598 010 130 648 530 944
+2^138 = 3 484 491 437 270 409 86 586 495 598 010 130 648 530 944
 
 
 ### Znaková tabulka
