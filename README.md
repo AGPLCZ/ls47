@@ -8,6 +8,9 @@ K prolomení symetrického klíče metodou brute-force je potřeba vyzkoušet 2^
 
 2^138 = 3 484 491 437 270 409 86 586 495 598 010 130 648 530 944
 
+Superpočítač, který by byl schopný prověřit trilion (10^18) LS47 klíčů za sekundu, by vyžadovaly přibližně miliardu let.
+
+
 
 ### Znaková tabulka
 Hvězdička (násobení) * v novější verzi nahrazena @
