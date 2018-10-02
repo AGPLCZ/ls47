@@ -4,7 +4,8 @@ LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze �
 ![Tiles printed out](skaut.png)
 
 ### Prolomení šifry 
-Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 pokusů. Což je miliarda kvadrilionů možností. Prolomení by trvalo déle než 100 let. Toto je počet potřebných kombinací: 1 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 kombinací.
+ Toto je počet potřebných kombinací: 3 484 491 437 270 409 86 586 495 598 010 130 648 530 944
 
 
 ### Znaková tabulka
