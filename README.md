@@ -64,6 +64,7 @@ První vstupní písmeno je "Y"
 3. Sloupec se zašifrovaným písmenem o 1 dolů
 4. [Značku] posuneme o offset z kostičky se zašifrovaným písmenem
 
+!!! Marker při posunu s kostičkama neposouváme.
 
 # Pro vysvětlení si ukážeme příklad šifrování za pomocí obrázků:
 
