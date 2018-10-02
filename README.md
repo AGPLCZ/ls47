@@ -4,7 +4,8 @@ LS47 je kostičková šifra, obstojí proti síle výkonného počítače, lze �
 ![Tiles printed out](skaut.png)
 
 ### Prolomení šifry 
-Útočník by musel vyzkoušet každý možný klíč, než by dostal srozumitelný text, to by vyžadovalo 2^138 kombinací.
+K prolomení symetrického klíče metodou brute-force je potřeba vyzkoušet 2^138 kombinací (každý možný klíč), než by útočník dostal srozumitelný text.
+
 2^138 = 3 484 491 437 270 409 86 586 495 598 010 130 648 530 944
 
 
