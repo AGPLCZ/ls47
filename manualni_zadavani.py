@@ -1,5 +1,5 @@
 import random
-letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()"
+letters = "_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!'()"
 tiles = list(zip(letters, map(lambda x: (x // 7, x % 7), range(7 * 7))))
 padding_size = 0 #počet přidaných znaků které se generují náhodně 
 
@@ -148,11 +148,11 @@ if __name__ == '__main__':
     print('Písmena v této implementaci:')
     print('Základní rozložení:   ' + letters)
     pasw = "tohle_je_tajne_heslo"   #Zadej heslo, to ovlivní rozležení tabulky
-    key = derive_key ('' + pasw) 
-    #key = ('abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!@()_') # ruční zadání klíče
+    #key = derive_key ('' + pasw) 
+    key = ("_abcdefghijklmnopqrstuvwxyz.0123456789,-+*/:?!'()") # ruční zadání klíče
     print('Klíč šifry:           ' + key)
     print('Heslo šifry:          ' + pasw)
-    enc = encrypt_pad(key, 'ahoj') #Zde zadej text k zašifrování
+    enc = encrypt_pad(key, 'tajna_zprava') #Zde zadej text k zašifrování
     print('-------------------------------------------------------------------------')
     print(' ')
     print(' ')
